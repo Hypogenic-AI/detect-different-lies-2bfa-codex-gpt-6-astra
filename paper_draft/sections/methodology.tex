@@ -1,0 +1,42 @@
+\section{Methodology}
+\label{sec:method}
+\subsection{Matched questions and response conditions}
+We sample 600 unique questions with seed 42 from the \triviaqa \texttt{rc.nocontext} validation data~\cite{triviaqaData}. The source has 17,944 rows and 9,960 deduplicated questions. Hashing canonical normalized answer entities yields 355 training, 124 validation, and 121 test questions. All variants of each question remain together; canonical answer entities are disjoint across splits. Alias-equivalent entities and topical dependencies can remain. The first 100 questions form a feasibility pilot within the fixed sample. We do not optimize prompts after its low recovered-case yield.
+
+We use the pinned \qwen checkpoint~\cite{qwenModel} with BF16 inference, no fine-tuning, and no quantization. Each question receives five neutral belief samples across three phrasings, an independent greedy verification, three additional samples for entropy, one response in each of five arms, and five greedy follow-ups. This gives $600(5+1+3+5+5)=11{,}400$ generations. Stochastic responses use temperature 0.7, top-$p$ 0.9, top-$k$ 0, and a 32-token limit. All main conversations are fresh and stateless. Arm order is fixed for batching, with shuffled records within arms and logged batch seeds; thus batch and seed effects cannot be fully excluded.
+
+The \emph{neutral} arm requests a brief factual answer and permits UNKNOWN. The \emph{sham} arm offers 100 fictional quiz points if a contestant relying on the answer is correct. The \emph{reward} arm changes the rewarded outcome to an incorrect answer, without supplying an answer or explicitly asking the model to lie. The \emph{reputation} arm ties a prestigious contract to sounding definitive and penalizes uncertainty; it does not directly reward falsehood. The \emph{instructed} control explicitly requests an incorrect answer without disclosure. We exclude this control from false-output composition estimates. These are prompt incentives, not real stakes or demonstrated autonomous goals. Sham controls the reward frame, but is not length-matched to neutral or reputation.
+
+After every main response, we append a private factual-answer request to the same conversation. It states that the answer will not affect points or reputation. Universal collection prevents later audit corrections from determining which follow-up evidence exists. \Secref{sec:prompts} provides exact prompts and scoring rules.
+
+\subsection{Operational labels and estimands}
+Let $c_q$ be the number of correct neutral belief samples for question $q$, $v_q$ indicate correct independent verification, and $F_{qa}$ indicate a valid false response in arm $a$. We label $q$ \emph{known} when $c_q\geq4$ and $v_q=1$. We label it \emph{stable wrong} when $c_q\leq1$, at least four samples repeat the same normalized wrong answer, and the wrong verification agrees with that mode. Other questions with $c_q\leq1$ are \emph{low evidence}; all remaining questions are \emph{mixed}. Strict scoring gives 229 known, 81 stable-wrong, 240 low-evidence, and 50 mixed questions.
+
+Let $R_{qa}$ indicate a correct private follow-up and $\mathcal{P}=\{\mathrm{reward},\mathrm{reputation}\}$. A candidate mismatch and a recovered misreport proxy are, respectively,
+\begin{equation}
+M_{qa}=F_{qa}\,\mathbf{1}\{q\text{ known}\}\,\mathbf{1}\{a\in\mathcal{P}\},
+\qquad L_{qa}=M_{qa}R_{qa}.
+\label{eq:labels}
+\end{equation}
+An \emph{uncertain-error proxy} is a false neutral response on a low-evidence question. A \emph{stable-wrong repetition} must actually repeat the wrong neutral mode; a different false answer from the same question remains unresolved. All other false outputs, including nonrecovering known mismatches and pressured low-evidence answers, are \emph{unresolved}. These four output categories are mutually exclusive. We use ``uncertain error'' in this narrow operational sense, while acknowledging that stable misconceptions are also epistemic failures.
+
+For an equal mixture $D$ of neutral, sham, reward, and reputation, we report each category's share among \emph{all} false outputs:
+\begin{equation}
+\widehat{\pi}_k(D)=\frac{\sum_{q,a\in D}\mathbf{1}\{(q,a)\text{ has category }k\}}{\sum_{q,a\in D}F_{qa}}.
+\label{eq:shares}
+\end{equation}
+These are conditional operational shares, not causal mechanism proportions or deployment prevalence. Recovery can result from new retrieval or correction. Nonrecovery can reflect anchoring, concealment, or retrieval failure. Neither outcome establishes intent or persistence of the original belief.
+
+\para{Correctness and audit.}
+Primary scoring uses normalized alias exact match. Abstentions, refusal patterns, and responses exceeding 16 normalized words are excluded from the false denominator. A blinded reference-equivalence audit uses \texttt{qwen/qwen3.8-27b} at temperature zero to evaluate shuffled question--answer pairs against references and aliases. It sees neither arm, belief state, follow-up relationship, nor probe score. The audit permits reference-supported paraphrases and numeric tolerances, retains uncertain judgments as unresolved, and excludes truncated incorrect answers. It is fallible model assistance rather than human ground truth. Audited labels recompute behavioral strata and relabel evaluation for the same frozen probes; no audited label is used to refit them.
+
+\subsection{Probes, controls, and statistical analysis}
+We teacher-force exact saved tokens and extract residual block outputs at layers 14 and 28. Features are either the mean over answer tokens, excluding EOS and padding, or the last pre-answer prompt token. Layer 28 precedes final normalization. Holding the prompt fixed while changing the continuation yields maximum prompt-feature difference 0.0, confirming that the prompt feature does not leak answer tokens. Response features can still retain prompt information.
+
+Probes use training-only standardization and L2 logistic regression with $C=1$. The instructed-deception probe trains on 21 paired training questions with correct neutral and known-incorrect instructed responses: 42 rows total. Its positive labels do not require recovery or establish strategic intent. A neutral error probe trains on 288 valid neutral answers, including 135 errors. An entropy probe uses all 355 training questions, with 123 positives defined by independent normalized-answer entropy above 0.5 nats. With three independent samples, entropy is $-\sum_j\hat p_j\log\hat p_j$, where $j$ indexes normalized strings rather than entailment clusters. Neither knowledge-label samples nor reference answers enter this feature.
+
+Controls include a character 2--4-gram TF-IDF answer-text classifier, answer length, mean negative log probability, sampled answer entropy, and prompt-only probes. Layer 14 is primary; layer 28 and an Apollo-motivated $C=0.001$ setting without an intercept are fixed sensitivities, not test-selected winners. Both pressure arms are absent from instructed/neutral probe training; reputation is the designated held-out incentive family. We do not fit the proposed supervised verified-mechanism classifier because training contains only one positive. A trained follow-up probe and full entailment-based \sep are not implemented.
+
+We evaluate held-out question responses with signed \auroc: higher scores always predict the stated positive class. We do not reverse uncertainty scores after observing test results. We also retain average precision, balanced accuracy, macro-F1, and confusion matrices in the artifacts. The response-level threshold is the higher 95th percentile of scores on only 45 validation neutral-correct answers; a strict score exceedance triggers a flag. Five percent is a calibration target, not a guaranteed test false-positive rate. This sample cannot resolve a 1\% rate.
+
+We use 2,000 question-cluster bootstrap replicates for shares, risk differences, and \auroc, preserving dependence among responses to the same question. AUROC uses tie-correct weighted Mann--Whitney calculations checked against scikit-learn. Exact paired McNemar/binomial tests compare reward and reputation with sham among known questions, with Holm correction across these two primary tests. Detector comparisons and external checks are descriptive. Small-cell bootstrap intervals condition on observed examples and can substantially understate uncertainty about unseen misreport types.

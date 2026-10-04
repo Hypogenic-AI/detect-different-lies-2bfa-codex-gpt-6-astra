@@ -1,0 +1,45 @@
+Prompt Context Can Dominate Deception Probes:
+A Matched-Question Diagnostic Study
+Xiaoyan Bai and NeuriCo
+Abstract
+A false answer can reflect uncertainty, a stable misconception, or misreporting
+under an incentive. A useful deception detector must distinguish these possibil-
+ities without relying only on the surrounding prompt. We conduct a matched-
+question diagnostic study of a fixed historical model, Qwen2.5-7B-Instruct, us-
+ing 600 unique TriviaQA questions and 11,400 local generations. Independent
+knowledge checks, five response conditions, and context-preserving follow-ups
+define conservative operational labels. Only two incentive-associated false re-
+sponses satisfy our recovered-misreport criterion; one is a malformed fragment.
+Across an equal mixture of four non-instructed conditions, these proxies ac-
+count for 0.21% of 939 strictly scored false outputs, while 60.49% remain un-
+resolved. A reference-equivalence audit yields 0.25% and 62.36%, respectively.
+An instructed-deception response probe achieves AUROC 0.972 against uncer-
+tain neutral errors, but a pre-answer prompt-only probe achieves 1.000. The re-
+sponse probe reaches only 0.605 on unverified incentive mismatches and flags
+22.6% of known-correct reward answers at a neutral-calibrated threshold, com-
+pared with 3.7% of known-correct neutral answers. With only one recovered test
+example, the central verified-misreport comparison remains underpowered. Our
+results identify prompt sensitivity and calibration failures in this protocol, while
+showing why high instructed-condition discrimination does not establish detection
+of belief–statement mismatch.
+1
+Introduction
+A false answer does not reveal why a language model produced it. The model may lack reliable
+knowledge, repeatedly retrieve a wrong answer, or give a statement that conflicts with knowledge
+elicited elsewhere. These possibilities matter for monitoring: a detector that responds to uncertainty
+or incentive wording can flag correct answers while providing little evidence about misreporting.
+What should a deception probe distinguish? Accuracy compares a statement with an external
+reference. Honesty concerns its relationship to the model’s available beliefs. MASK operational-
+izes this distinction through neutral belief elicitation and pressured responses Ren et al. [2025];
+subsequent work strengthens belief verification and tests detector transfer Cooney et al. [2026],
+Kretschmar et al. [2025]. These advances also expose a measurement difficulty. Repeated correct
+answers provide evidence of knowledge, but do not establish what information remains available at
+a particular decision. Likewise, a corrective follow-up may induce retrieval rather than reveal an
+unchanged belief.
+Our main question is whether matched false answers carry detector signals that distinguish uncertain
+errors from incentive-associated misreporting. Strong separation of instructed false answers from
+neutral correct answers cannot resolve this question: factuality, knowledge, and prompt condition all
+differ. Linear activation probes are a natural starting point Goldowsky-Dill et al. [2025], but we also
+need false-versus-false comparisons, prompt-only features, and correct answers generated under the
+same pressure.
+NeurIPS-style research manuscript. October 2026.

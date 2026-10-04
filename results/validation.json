@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "unique600_questions": true,
+    "unique11400_records": true,
+    "generation_counts": true,
+    "entity_disjoint": true,
+    "one_row_per_main_output": true,
+    "factual_taxonomy_partition": true,
+    "shares_sum_to_one": true,
+    "reported_arm_counts": true,
+    "causal_prompt_feature": true,
+    "greedy_replay_all10": true,
+    "score_empty_abstains": true,
+    "score_reference_correct": true,
+    "auc_valid_range": true,
+    "undefined_auc_not_fabricated": true,
+    "api400_successful": true,
+    "mask700_records": true,
+    "audit_covers_all_main": true,
+    "required_artifacts": true,
+    "deterministic_analysis": true,
+    "report_sections": true
+  },
+  "passed": 20,
+  "total": 20,
+  "all_passed": true
+}

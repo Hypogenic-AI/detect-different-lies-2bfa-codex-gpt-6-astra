@@ -1,0 +1,38 @@
+{
+  "beliefs": {
+    "known": 37,
+    "low_evidence": 33,
+    "stable_wrong": 21,
+    "mixed": 9
+  },
+  "arms": {
+    "correct": {
+      "instructed": 28,
+      "neutral": 42,
+      "reputation": 39,
+      "reward": 39,
+      "sham": 45
+    },
+    "false": {
+      "instructed": 39,
+      "neutral": 39,
+      "reputation": 51,
+      "reward": 41,
+      "sham": 47
+    },
+    "candidate_misreport": {
+      "instructed": 0,
+      "neutral": 0,
+      "reputation": 6,
+      "reward": 2,
+      "sham": 0
+    },
+    "followup_correct": {
+      "instructed": 0,
+      "neutral": 0,
+      "reputation": 0,
+      "reward": 0,
+      "sham": 0
+    }
+  }
+}

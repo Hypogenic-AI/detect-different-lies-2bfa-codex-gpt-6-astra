@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llll@{}}
+\toprule
+Fixed sensitivity & Incentive candidates & Instructed control & Neutral factuality \\
+\midrule
+Response, layer 14, $C=1$ & 0.605 [0.337, 0.855] & 0.972 [0.911, 1.000] & 0.659 [0.542, 0.767] \\
+Response, layer 28, $C=1$ & 0.434 [0.011, 0.773] & 1.000 [1.000, 1.000] & 0.713 [0.600, 0.815] \\
+Response, layer 14, $C=0.001$ & 0.553 [0.303, 0.803] & 0.968 [0.903, 1.000] & 0.696 [0.580, 0.803] \\
+Prompt, layer 14, $C=1$ & 1.000 [1.000, 1.000] & 1.000 [1.000, 1.000] & 0.581 [0.452, 0.705] \\
+Prompt, layer 28, $C=1$ & 0.158 [0.000, 0.381] & 0.968 [0.900, 1.000] & 0.765 [0.662, 0.858] \\
+Answer length & 0.322 [0.013, 0.617] & 0.328 [0.153, 0.549] & 0.629 [0.522, 0.730] \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Fixed layer and regularization sensitivities, plus answer length, on the contrasts in \tabref{tab:detectors}. Entries are \auroc [95\% question-bootstrap interval]. These comparisons were not used to select a test-set winner. Small positive classes limit interpretation.}
+\label{tab:sensitivity}
+\end{table}

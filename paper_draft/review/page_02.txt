@@ -1,0 +1,56 @@
+600 questions
+Entity split
+355 / 124 / 121
+train / val. / test
+Neutral evidence
+5 beliefs + verification
+3 entropy samples
+Five conditions
+Neutral / Sham / Reward
+Reputation / Instructed
+One follow-up per answer
+Behavioral labels
+Recovered / Uncertain
+Stable wrong / Unresolved
+Frozen probes
+Answer / prompt states
+False vs. false + correct
+1 recovered test positive
+Figure 1: Matched-question protocol. All variants of each question remain in one entity-grouped
+split. Independent neutral samples establish operational knowledge strata and answer entropy. Five
+main responses each receive a context-preserving follow-up. Behavioral labels and frozen probes
+are evaluated separately: follow-up recovery supports a proxy label but is not a detector input. Only
+one recovered incentive example reaches the test split.
+We conduct a bounded diagnostic replication on QWEN2.5-7B-INSTRUCT, explicitly a historical
+baseline rather than a current frontier model. We sample 600 unique TRIVIAQA questions, split
+canonical answer entities before fitting detectors, and collect independent knowledge samples, five
+matched response conditions, and a private factual follow-up after every response (figure 1). Our
+labels retain uncertain neutral errors, repetitions of stable wrong beliefs, recovered incentive mis-
+reports, and unresolved false outputs. We use the term recovered misreport proxy because neither
+neutral consistency nor subsequent recovery proves intent.
+The behavioral yield is the central constraint: only two incentive responses satisfy the recovery cri-
+terion, and only one reaches the test split. In the four-arm mixture, 60.49% of strictly scored false
+outputs remain unresolved. The clearest detector result concerns context. An instructed-deception
+response probe achieves AUROC 0.972 against uncertain neutral errors, while its prompt-only coun-
+terpart achieves 1.000. At a threshold calibrated on neutral correct answers, the response probe flags
+12/53 known-correct reward answers and 2/54 known-correct neutral answers. We therefore report
+a specificity diagnostic and a feasibility limit, not a reliable estimate of genuine-lie detection.
+Our contributions are:
+• We construct a matched-question protocol with independent knowledge and uncertainty samples,
+universal follow-ups, and a conservative four-way partition of false outputs.
+• We measure prompt sensitivity through false-versus-false contrasts and correct pressured controls,
+showing that high instructed-condition AUROC coexists with perfect prompt-only separation.
+• We quantify the low recovered-case yield and assess label, threshold, and external-dataset sensi-
+tivity without replacing the underpowered primary comparison with instructed controls.
+Section 2 situates this protocol in prior work. Section 3 defines the measurements; section 4 presents
+results; section 5 examines their implications and limits.
+2
+Related Work
+Honesty, factuality, and belief evidence. MASK compares elicited beliefs, pressured statements,
+and reference answers to separate honesty from accuracy Ren et al. [2025]. Cooney et al. add
+belief-verified evaluations and find substantial detector failures across models and trained organ-
+isms Cooney et al. [2026]. We adopt their measurement concern, rather than claim a new honesty
+taxonomy. Our narrower contribution combines matched factual questions, independent knowledge
+strata, false-versus-false evaluation, and prompt controls in one pipeline. Cheang et al. distinguish
+knowledge recall from truthfulness and show that confident errors challenge internal-state detec-
+2

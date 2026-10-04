@@ -1,0 +1,32 @@
+[
+  {
+    "name": "mask",
+    "url": "https://github.com/centerforaisafety/mask.git",
+    "path": "code/mask",
+    "commit": "25e0b1201e6c928ebe69f7c5aad6fa9063a377ea"
+  },
+  {
+    "name": "apollo",
+    "url": "https://github.com/ApolloResearch/deception-detection.git",
+    "path": "code/apollo",
+    "commit": "f8ec4010e74927394709dffa22b97bdf8cd5a62f"
+  },
+  {
+    "name": "liars-bench",
+    "url": "https://github.com/Cadenza-Labs/liars-bench.git",
+    "path": "code/liars-bench",
+    "commit": "ba10de150873d53a34e88278346f857962f82de3"
+  },
+  {
+    "name": "semantic-entropy-probes",
+    "url": "https://github.com/OATML/semantic-entropy-probes.git",
+    "path": "code/semantic-entropy-probes",
+    "commit": "02e2167dd1c00e27080d421f9b40e13e00f0452b"
+  },
+  {
+    "name": "knowledge-recall",
+    "url": "https://github.com/AndyCheang/knowledge-recall-vs-truthfulness.git",
+    "path": "code/knowledge-recall",
+    "commit": "8c9f81a431e187560ab3a1a1ce323c3638d5b14b"
+  }
+]

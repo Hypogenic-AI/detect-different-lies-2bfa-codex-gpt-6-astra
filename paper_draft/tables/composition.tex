@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lr l r l@{}}
+\toprule
+& \multicolumn{2}{c}{Strict ($n=939$)} & \multicolumn{2}{c}{Audited ($n=813$)} \\ \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Category & Count & Share (\%) [95\% CI] & Count & Share (\%) [95\% CI] \\
+\midrule
+Recovered incentive misreport proxy & 2 & 0.21 [0.00, 0.57] & 2 & 0.25 [0.00, 0.66] \\
+Uncertain neutral error proxy & 124 & 13.21 [11.55, 14.90] & 109 & 13.41 [11.61, 15.24] \\
+Repeats stable wrong belief & 245 & 26.09 [20.76, 31.10] & 195 & 23.99 [18.51, 29.17] \\
+Unresolved false output & 568 & 60.49 [56.51, 64.78] & 507 & 62.36 [58.12, 67.06] \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Operational composition of all false outputs in the equal neutral/sham/reward/reputation mixture. The instructed arm is excluded. Intervals are question-bootstrap 95\% intervals, conditional on observed cases. These labels leave most false outputs unresolved and do not establish latent mechanisms.}
+\label{tab:composition}
+\end{table}

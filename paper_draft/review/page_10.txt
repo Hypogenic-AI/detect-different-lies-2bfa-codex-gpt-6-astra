@@ -1,0 +1,48 @@
+References
+Chi Seng Cheang, Hou Pong Chan, Wenxuan Zhang, and Yang Deng. Do LLMs Really Know What
+They Don’t Know? Internal States Mainly Reflect Knowledge Recall Rather Than Truthfulness.
+arXiv preprint arXiv:2510.09033, 2025. URL https://arxiv.org/abs/2510.09033.
+Alan Cooney, David Africa, and Geoffrey Irving. “Did you lie?” Evaluating Lie Detectors across
+Model Scale and Belief-Verified Model Organisms. arXiv preprint arXiv:2606.12618, 2026. URL
+https://arxiv.org/abs/2606.12618.
+Nicholas Goldowsky-Dill, Bilal Chughtai, Stefan Heimersheim, and Marius Hobbhahn. Detecting
+Strategic Deception Using Linear Probes. arXiv preprint arXiv:2502.03407, 2025. URL https:
+//arxiv.org/abs/2502.03407.
+Jack Hopkins, Dipika Khullar, Rowan Wang, and Fabien Roger. Fine-Tuned Lie Detectors Failed to
+Generalize. Anthropic Alignment Science Blog, 2026. URL https://alignment.anthropic.
+com/2026/lie-detectors/. August 21, 2026.
+Jannik Kossen, Jiatong Han, Muhammed Razzak, Lisa Schut, Shreshth Malik, and Yarin Gal. Se-
+mantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs. arXiv preprint
+arXiv:2406.15927, 2024. URL https://arxiv.org/abs/2406.15927.
+Kieron Kretschmar, Walter Laurito, Sharan Maiya, and Samuel Marks. Liars’ Bench: Evaluating
+Lie Detectors for Language Models.
+arXiv preprint arXiv:2511.16035, 2025.
+URL https:
+//arxiv.org/abs/2511.16035.
+Josiah Luikham.
+Asymmetries in Spontaneous and Instructed Deception.
+arXiv preprint
+arXiv:2609.00180, 2026. URL https://arxiv.org/abs/2609.00180.
+Amr Moustafa, Max Feser, and Florian Mai. Beyond Liars’ Bench: The Impact of Lie Typology,
+Depth, and Sparsity on Deception Detection in LLMs. arXiv preprint arXiv:2607.20479, 2026.
+URL https://arxiv.org/abs/2607.20479.
+Vikram Natarajan, Devina Jain, Shivam Arora, Satvik Golechha, and Joseph Bloom. One Probe
+Won’t Catch Them All: Towards Targeted Deception Detection. arXiv preprint arXiv:2602.01425,
+2026. URL https://arxiv.org/abs/2602.01425.
+Qwen Team.
+Qwen2.5-7B-Instruct.
+Hugging Face model repository, 2024.
+URL https:
+//huggingface.co/Qwen/Qwen2.5-7B-Instruct. Pinned checkpoint revision in Appendix
+A.
+Richard Ren, Arunim Agarwal, Mantas Mazeika, Cristina Menghini, Robert Vacareanu, Brad Ken-
+stler, Mick Yang, Isabelle Barrass, Alice Gatti, Xuwang Yin, Eduardo Trevino, Matias Geralnik,
+Adam Khoja, Dean Lee, Summer Yue, and Dan Hendrycks. The MASK Benchmark: Disen-
+tangling Honesty From Accuracy in AI Systems. arXiv preprint arXiv:2503.03750, 2025. URL
+https://arxiv.org/abs/2503.03750.
+Tom-Felix Thormann. Probing the Limits of the Lie Detector Approach to LLM Deception. arXiv
+preprint arXiv:2603.10003, 2026. URL https://arxiv.org/abs/2603.10003.
+TriviaQA. TriviaQA: rc.nocontext dataset. Hugging Face dataset repository, 2026. URL https://
+huggingface.co/datasets/mandarjoshi/trivia_qa. Snapshot accessed October 4, 2026;
+pinned revision in Appendix A.
+10

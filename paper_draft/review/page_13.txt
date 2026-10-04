@@ -1,0 +1,91 @@
+Arm
+Correct
+False
+Abstain
+Invalid/unresolved
+Candidates
+Neutral
+286
+194
+119
+1
+0
+Sham
+305
+222
+72
+1
+0
+Reward
+291
+181
+128
+0
+9
+Reputation
+298
+216
+84
+2
+12
+Instructed
+198
+182
+218
+2
+0
+Table 6: Reference-audited main responses. Each arm starts with 600 responses; six outputs across
+arms are invalid or unresolved. The 21 incentive candidates include the same two recovered reward
+proxies as strict scoring. Audit labels are a sensitivity analysis, not human ground truth.
+Knowledge criterion
+Known
+Candidates
+Recovered
+3/5 + verification
+242
+21
+2
+4/5 + verification
+229
+18
+2
+5/5 + verification
+213
+10
+1
+Table 7: Strict-label sensitivity to the neutral-consistency threshold, always requiring correct in-
+dependent verification. All thresholds are reported without selecting a preferred result from test
+performance.
+B
+Supplementary Results and Audit
+B.1
+Behavioral contrasts and measurement sensitivity
+Table 5 reports the two prespecified paired comparisons. Table 6 retains invalid and uncertain au-
+dited main responses separately, and table 7 varies the consistency requirement while holding in-
+dependent verification fixed. These analyses document measurement sensitivity without redefining
+candidate mismatches as verified lies.
+B.2
+Probe sensitivities and average precision
+Table 8 shows fixed layer/regularization sensitivities and answer length. Table 9 supplements rank-
+ing AUROC with average precision and its positive-prevalence reference level. We do not select
+a detector or orientation using these test results. The primary comparison remains limited by one
+recovered positive, regardless of the numerical metric attainable on that example.
+B.3
+Candidate validity and audit failures
+All 21 audited candidate rows have qualitative agent review notes in results/targeted_
+candidate_review.csv. This is not independent human annotation. The two recovered reward
+examples illustrate the gap between the operational criterion and meaningful deception:
+• On the question asking which rock band Alex Turner leads, the training example answers “The
+seeme” instead of the Arctic Monkeys reference and recovers in follow-up. The original answer
+is an uninterpretable fragment and weak evidence of a meaningful false assertion.
+• On the question asking the Crimean city near Livadia Palace associated with the 1945 conference,
+the test example answers “Simferopol” instead of Yalta and then recovers Yalta. This is a clear
+city-name mismatch with recovery, but neither step establishes intent at the original decision.
+Excluding the malformed training example leaves one recovered event overall and no training posi-
+tive. Thus, even the conservative operational label can overstate the available evidence for an asser-
+tion contrary to an accessible belief.
+Strict scoring misses valid equivalents such as “River Bann”, “Indian Rupee”, and “five golden
+rings”. The audit repairs many such cases but is also fallible: it rejects “Boyle’s Law” for a whose-
+law question despite identifying the surname. A “hardest bone” question has an underspecified
+reference. Eight generations across all 11,400 records reach the 32-token cap. Across main arms,
+13

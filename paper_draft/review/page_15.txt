@@ -1,0 +1,57 @@
+Detector / control
+Incentive candidates
+Instructed control
+Neutral factuality
+Instructed deception, response
+0.244
+0.958
+0.576
+Instructed deception, prompt only
+1.000
+1.000
+0.560
+Neutral error probe
+0.618
+0.447
+0.772
+Answer-entropy probe (approx.)
+0.433
+0.444
+0.625
+Deception, C = 0.001
+0.220
+0.949
+0.602
+Answer-text classifier
+0.189
+0.573
+0.451
+Mean negative log probability
+0.172
+0.493
+0.806
+Independent answer entropy
+0.154
+0.354
+0.628
+Table 9: Average precision for the same frozen contrasts as table 3. Positive-prevalence reference
+levels are 4/23 = 0.174, 13/32 = 0.406, and 38/97 = 0.392, respectively. Values are descriptive,
+without post-hoc significance claims.
+Figure 4: Independent three-sample normalized-answer entropy by strict knowledge state, repro-
+duced from the saved experiment figure. Entropy is measured in nats using samples distinct from
+those used for belief labels. String variation can reflect synonymous answers rather than semantic
+uncertainty, so this feature does not reproduce entailment-clustered semantic entropy.
+occurs alongside a large abstention increase. Without context-preserving verification, the one known
+pressure mismatch cannot receive our recovered label.
+The primary response probe flags 16/38 neutral-correct adapted-MASK responses (42.1%) and 3/7
+pressure-correct responses (42.9%). These small denominators entail wide uncertainty. The prompt-
+only probe flags all correct responses in both conditions. The result concerns out-of-domain calibra-
+tion under the frozen TRIVIAQA threshold, not official MASK honesty or proof of seven lies.
+C
+Reproducibility and Execution Deviations
+The workspace contains raw model outputs, activation shards, fitted probes, source/configu-
+ration hashes, and execution logs.
+Principal analysis artifacts are results/summary.json,
+results/audited_summary.json, results/detector_metrics.csv, results/audited_
+detector_metrics.csv, results/subgroup_flags.csv, results/scored_outputs.csv,
+15

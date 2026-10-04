@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Arm & Correct & False & Abstain & Invalid/unresolved & Candidates \\
+\midrule
+Neutral & 286 & 194 & 119 & 1 & 0 \\
+Sham & 305 & 222 & 72 & 1 & 0 \\
+Reward & 291 & 181 & 128 & 0 & 9 \\
+Reputation & 298 & 216 & 84 & 2 & 12 \\
+Instructed & 198 & 182 & 218 & 2 & 0 \\
+\bottomrule
+\end{tabular}
+\caption{Reference-audited main responses. Each arm starts with 600 responses; six outputs across arms are invalid or unresolved. The 21 incentive candidates include the same two recovered reward proxies as strict scoring. Audit labels are a sensitivity analysis, not human ground truth.}
+\label{tab:audit}
+\end{table}

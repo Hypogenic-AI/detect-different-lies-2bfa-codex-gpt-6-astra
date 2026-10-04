@@ -1,0 +1,7 @@
+{
+  "recorded_cost": 0.07952425069999991,
+  "prompt_tokens": 302422,
+  "completion_tokens": 17132,
+  "responses": 1110,
+  "caveat": "Recorded usage only; earlier failed audit retries did not preserve all response usage. Total billed cost may be higher."
+}

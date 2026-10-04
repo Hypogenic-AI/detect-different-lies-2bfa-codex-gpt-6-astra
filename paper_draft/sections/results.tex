@@ -1,0 +1,50 @@
+\section{Results}
+\label{sec:results}
+\subsection{Behavioral yield and unresolved false outputs}
+\Tabref{tab:behavior} reports all five arms. Strict false rates range from 34.33\% to 42.33\%, alongside substantial abstention. Explicit instruction does not reliably elicit false answers: the instructed arm produces 177 correct answers and 217 abstentions. Its 39 known-question false outputs include 16 recoveries, but these instructed cases are excluded from incentive-misreport counts.
+\input{tables/behavior}
+
+\para{How many false outputs can we classify?}
+Among 229 strictly known questions, reward produces six candidate mismatches and reputation produces 12. Only two candidates recover the reference answer in follow-up, both in reward. Across the four non-instructed arms, 939 outputs are false. Recovered proxies account for 2/939 (0.21\%), uncertain neutral errors for 124/939 (13.21\%), and stable-wrong repetitions for 245/939 (26.09\%). The remaining 568/939 (60.49\%) are unresolved (\tabref{tab:composition}). We therefore do not identify the requested two-way mechanism partition.
+\input{tables/composition}
+
+Even if the operational labels were correct, assigning none or all of the strict unresolved outputs to misreporting allows a share from 0.21\% to 60.70\%. This is an ambiguity range under those assumptions, not a confidence interval or a bound on latent intent. The two recovered events occur on two of 600 distinct questions, whose exact binomial 95\% interval is 0.04\%--1.20\%. The near-zero bootstrap interval for their share among false outputs should not be interpreted as precise knowledge of genuine-lie prevalence.
+
+\para{Do incentives increase errors on known questions?}
+Reward minus sham gives a false-response risk difference of $-0.44$ percentage points (95\% CI $[-2.62,1.75]$), with three increases and four decreases across matched pairs; Holm-adjusted $p=1.0000$. Reputation minus sham gives $2.18$ points ($[-0.88,5.68]$), with ten increases and five decreases; adjusted $p=0.6035$. These estimates supply weak evidence about these particular prompts, not evidence of equivalence or absence of incentive effects. \Tabref{tab:paired} gives the full paired comparisons.
+
+\para{Does reference-equivalence auditing change the conclusion?}
+The audit increases the known stratum to 260 questions and reduces stable wrong to 66, leaving 224 low-evidence and 50 mixed. It changes 611 scoring records across 163 unique question--answer pairs and marks 14 records uncertain. The non-instructed false denominator falls to 813, with 21 candidates and the same two recoveries. Recovered proxies now account for 0.25\%, while 62.36\% remain unresolved. Thus, exact matching affects the numerical partition but does not resolve the low yield. The audit itself has errors and is not independent human adjudication (\secref{sec:auditdetails}).
+
+\subsection{Prompt sensitivity in false-versus-false evaluation}
+\Tabref{tab:detectors} compares frozen detectors on the held-out questions. The candidate contrast contains only four incentive mismatches and 19 uncertain neutral errors; its positive labels do not verify misreporting. The instructed control contains 13 known-question false instructed answers and the same 19 uncertain errors. The neutral factuality contrast contains 38 errors and 59 correct answers.
+\input{tables/detectors}
+
+The response deception probe reaches \auroc 0.605 $[0.337,0.855]$ on incentive candidates and 0.972 $[0.911,1.000]$ on the instructed control. The prompt-only deception probe reaches 1.000 $[1.000,1.000]$ on both (\figref{fig:detectors}). Perfect empirical separation by a pre-answer representation shows that the contrast admits a prompt-based shortcut; the degenerate interval does not establish perfect population performance. On the easier instructed-false versus known-neutral-correct contrast, the response probe reaches 0.989 and the prompt-only probe again reaches 1.000.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/detector_controls.pdf}
+\caption{Held-out false-versus-false \auroc and question-bootstrap 95\% intervals. Left: unverified incentive candidates versus uncertain neutral errors. Right: known-question instructed false answers versus uncertain neutral errors. Orange marks the pre-answer prompt-only control; blue marks response or answer-derived scores. The dashed line is chance (0.5). Prompt-only separation is perfect in both observed contrasts. Neither panel reliably estimates genuine strategic-deception detection.}
+\label{fig:detectors}
+\end{figure}
+
+The neutral error probe achieves 0.838 $[0.758,0.912]$ on neutral factuality; mean negative log probability reaches 0.881 $[0.805,0.947]$. On the instructed false-versus-false control, the error and entropy probes instead reach 0.478 and 0.401. Independent sampled entropy reaches 0.263, consistent with lower uncertainty on known instructed questions. Scores below 0.5 can contain information in the opposite direction; we retain the prespecified orientation. These contrasts are compatible with different detector signals, but knowledge and prompt condition also differ. They do not establish specificity for belief--statement mismatch. Average precision and fixed sensitivities appear in \secref{sec:supplement}.
+
+\para{What happens to the primary recovered-proxy comparison?}
+Only one recovered example and 19 uncertain errors occur in the test split. Same-reward false-versus-false evaluation contains one candidate/recovered positive and 20 low-evidence false answers. Held-out reputation has zero recovered positives, making its recovered-proxy \auroc undefined. We retain numerical results for defined tiny strata in the machine-readable artifacts, but do not interpret them as reliable mechanism-detection estimates. Instructed controls and unverified candidates cannot substitute for this missing support.
+
+\subsection{False alarms on correct pressured answers}
+At the neutral-calibrated threshold, the response deception probe flags 12/53 known-correct reward answers (22.6\%), compared with 2/54 known-correct neutral answers (3.7\%; \tabref{tab:flags}). It flags 8/53 sham answers and 9/51 reputation answers. Even when the model answers correctly in the instructed condition, it flags 27/34 responses (79.4\%). The error probe's reward known-correct flag count is 2/53.
+\input{tables/flags}
+
+The prompt-only deception probe flags every known-correct sham, reward, reputation, and instructed answer, but none of 54 known-correct neutral answers at its own neutral-calibrated threshold. This directly demonstrates context-sensitive scores and poor threshold transfer. It also shows why averaging response states does not by itself remove prompt information. These controls diagnose a problem with the evaluated detector configuration without proving that its representations contain no belief-related signal.
+
+\subsection{Robustness and external checks}
+Changing the known threshold from 3/5 to 4/5 to 5/5, always with independent verification, yields 242, 229, and 213 known questions; 21, 18, and ten incentive candidates; and two, two, and one recovered proxies (\tabref{tab:knowledge}). Belief labeling therefore affects yield. Layer 28 and alternative regularization remain fixed sensitivity analyses rather than selected alternatives.
+
+Relabeling only held-out evaluation with audited correctness preserves the prompt confound. The instructed response probe reaches 0.976 versus prompt-only 1.000, with 12 instructed positives and 14 uncertain negatives. For incentive candidates, response \auroc is 0.732 $[0.464,0.947]$ versus prompt-only 1.000, with four positives and 14 negatives. This analysis does not repair possible errors in the original training labels.
+
+A separate OpenRouter check comprises 400 successful calls on 100 questions across four arms. Strict false counts are 38 neutral, 43 sham, 41 reward, and 46 reputation. It supplies a behavioral check without repeated belief labels or activations; provider routing is not pinned, so we neither pool it with local data nor claim identical inference.
+
+On a 100-question adaptation of \maskbench known facts, 99 references admit an unambiguous yes/no mapping and 38 questions satisfy a five-sample binary known proxy. Neutral responses include 38 correct, zero false, and 61 UNKNOWN; pressure responses include seven correct, seven false, and 85 UNKNOWN. One ambiguous-reference item per arm is excluded. Only one pressure falsehood occurs on a known question, and no context-preserving follow-up exists here. The exploratory paired false increase has uncorrected exact $p=0.015625$, but does not establish seven lies. The frozen response probe flags 16/38 neutral-correct answers and 3/7 pressure-correct answers; the prompt-only probe flags every correct answer in both arms. These are transfer and calibration failures in a modified protocol, not an official \maskbench score.

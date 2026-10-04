@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Who was the man behind The Chipmunks?",
+    "question_id": "tc_2",
+    "question_source": "http://www.triviacountry.com/",
+    "entity_pages": {
+      "doc_source": [],
+      "filename": [],
+      "title": [],
+      "wiki_context": []
+    },
+    "search_results": {
+      "description": [],
+      "filename": [],
+      "rank": [],
+      "title": [],
+      "url": [],
+      "search_context": []
+    },
+    "answer": {
+      "aliases": [
+        "David Seville"
+      ],
+      "normalized_aliases": [
+        "david seville"
+      ],
+      "matched_wiki_entity_name": "",
+      "normalized_matched_wiki_entity_name": "",
+      "normalized_value": "david seville",
+      "type": "WikipediaEntity",
+      "value": "David Seville"
+    }
+  },
+  {
+    "question": "Which Lloyd Webber musical premiered in the US on 10th December 1993?",
+    "question_id": "tc_33",
+    "question_source": "http://www.triviacountry.com/",
+    "entity_pages": {
+      "doc_source": [],
+      "filename": [],
+      "title": [],
+      "wiki_context": []
+    },
+    "search_results": {
+      "description": [],
+      "filename": [],
+      "rank": [],
+      "title": [],
+      "url": [],
+      "search_context": []
+    },
+    "answer": {
+      "aliases": [
+        "Sunset Blvd",
+        "West Sunset Boulevard",
+        "Sunset Boulevard",
+        "Sunset Bulevard",
+        "Sunset Blvd."
+      ],
+      "normalized_aliases": [
+        "sunset boulevard",
+        "sunset bulevard",
+        "west sunset boulevard",
+        "sunset blvd"
+      ],
+      "matched_wiki_entity_name": "",
+      "normalized_matched_wiki_entity_name": "",
+      "normalized_value": "sunset boulevard",
+      "type": "WikipediaEntity",
+      "value": "Sunset Boulevard"
+    }
+  },
+  {
+    "question": "Who was the next British Prime Minister after Arthur Balfour?",
+    "question_id": "tc_40",
+    "question_source": "http://www.triviacountry.com/",
+    "entity_pages": {
+      "doc_source": [],
+      "filename": [],
+      "title": [],
+      "wiki_context": []
+    },
+    "search_results": {
+      "description": [],
+      "filename": [],
+      "rank": [],
+      "title": [],
+      "url": [],
+      "search_context": []
+    },
+    "answer": {
+      "aliases": [
+        "Sir Henry Campbell-Bannerman",
+        "Campbell-Bannerman",
+        "Campbell Bannerman",
+        "Sir Henry Campbell Bannerman",
+        "Henry Campbell Bannerman",
+        "Henry Campbell-Bannerman"
+      ],
+      "normalized_aliases": [
+        "henry campbell bannerman",
+        "sir henry campbell bannerman",
+        "campbell bannerman"
+      ],
+      "matched_wiki_entity_name": "",
+      "normalized_matched_wiki_entity_name": "",
+      "normalized_value": "campbell bannerman",
+      "type": "WikipediaEntity",
+      "value": "Campbell-Bannerman"
+    }
+  }
+]

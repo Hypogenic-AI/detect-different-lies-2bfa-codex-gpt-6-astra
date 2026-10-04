@@ -1,0 +1,86 @@
+[
+  {
+    "question": "Asmara international airport is in which country?",
+    "question_id": "tc_7",
+    "question_source": "http://www.triviacountry.com/",
+    "entity_pages": {
+      "doc_source": [],
+      "filename": [],
+      "title": [],
+      "wiki_context": []
+    },
+    "search_results": {
+      "description": [],
+      "filename": [],
+      "rank": [],
+      "title": [],
+      "url": [],
+      "search_context": []
+    },
+    "answer": {
+      "aliases": [],
+      "normalized_aliases": [],
+      "matched_wiki_entity_name": "<unk>",
+      "normalized_matched_wiki_entity_name": "<unk>",
+      "normalized_value": "<unk>",
+      "type": "",
+      "value": "<unk>"
+    }
+  },
+  {
+    "question": "At whose concert were 11 people trampled to death in Ohio in 1979?",
+    "question_id": "tc_37",
+    "question_source": "http://www.triviacountry.com/",
+    "entity_pages": {
+      "doc_source": [],
+      "filename": [],
+      "title": [],
+      "wiki_context": []
+    },
+    "search_results": {
+      "description": [],
+      "filename": [],
+      "rank": [],
+      "title": [],
+      "url": [],
+      "search_context": []
+    },
+    "answer": {
+      "aliases": [],
+      "normalized_aliases": [],
+      "matched_wiki_entity_name": "<unk>",
+      "normalized_matched_wiki_entity_name": "<unk>",
+      "normalized_value": "<unk>",
+      "type": "",
+      "value": "<unk>"
+    }
+  },
+  {
+    "question": "Andy Warhol/'s 60s exhibition featured cans of which product?",
+    "question_id": "tc_51",
+    "question_source": "http://www.triviacountry.com/",
+    "entity_pages": {
+      "doc_source": [],
+      "filename": [],
+      "title": [],
+      "wiki_context": []
+    },
+    "search_results": {
+      "description": [],
+      "filename": [],
+      "rank": [],
+      "title": [],
+      "url": [],
+      "search_context": []
+    },
+    "answer": {
+      "aliases": [],
+      "normalized_aliases": [],
+      "matched_wiki_entity_name": "<unk>",
+      "normalized_matched_wiki_entity_name": "<unk>",
+      "normalized_value": "<unk>",
+      "type": "",
+      "value": "<unk>"
+    }
+  }
+]

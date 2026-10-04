@@ -1,0 +1,75 @@
+0.00
+0.25
+0.50
+0.75
+1.00
+AUROC
+Deception: response
+Deception: prompt only
+Neutral error probe
+Entropy probe (approx.)
+Answer text
+Mean neg. log prob.
+Sampled entropy
+Incentive candidates
+4 positive / 19 negative
+0.00
+0.25
+0.50
+0.75
+1.00
+AUROC
+Instructed control
+13 positive / 19 negative
+Figure 2: Held-out false-versus-false AUROC and question-bootstrap 95% intervals. Left: unver-
+ified incentive candidates versus uncertain neutral errors. Right: known-question instructed false
+answers versus uncertain neutral errors. Orange marks the pre-answer prompt-only control; blue
+marks response or answer-derived scores. The dashed line is chance (0.5). Prompt-only separation
+is perfect in both observed contrasts. Neither panel reliably estimates genuine strategic-deception
+detection.
+Known-correct condition
+Flagged / total
+Rate (%)
+Exact 95% interval (%)
+Neutral
+2/54
+3.7
+0.5–12.7
+Sham
+8/53
+15.1
+6.7–27.6
+Reward
+12/53
+22.6
+12.3–36.2
+Reputation
+9/51
+17.6
+8.4–30.9
+Instructed
+27/34
+79.4
+62.1–91.3
+Table 4: False alarms of the layer-14 response deception probe on known-correct test answers. The
+threshold uses 45 validation neutral-correct answers with a nominal 5% target. These condition-
+specific rates diagnose calibration shift; they are not estimates of overall monitor precision.
+candidate/recovered positive and 20 low-evidence false answers. Held-out reputation has zero re-
+covered positives, making its recovered-proxy AUROC undefined. We retain numerical results for
+defined tiny strata in the machine-readable artifacts, but do not interpret them as reliable mechanism-
+detection estimates. Instructed controls and unverified candidates cannot substitute for this missing
+support.
+4.3
+False alarms on correct pressured answers
+At the neutral-calibrated threshold, the response deception probe flags 12/53 known-correct reward
+answers (22.6%), compared with 2/54 known-correct neutral answers (3.7%; table 4). It flags 8/53
+sham answers and 9/51 reputation answers. Even when the model answers correctly in the instructed
+condition, it flags 27/34 responses (79.4%). The error probe’s reward known-correct flag count is
+2/53.
+The prompt-only deception probe flags every known-correct sham, reward, reputation, and in-
+structed answer, but none of 54 known-correct neutral answers at its own neutral-calibrated thresh-
+old. This directly demonstrates context-sensitive scores and poor threshold transfer. It also shows
+why averaging response states does not by itself remove prompt information. These controls di-
+agnose a problem with the evaluated detector configuration without proving that its representations
+contain no belief-related signal.
+7

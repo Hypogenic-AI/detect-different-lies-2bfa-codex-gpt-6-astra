@@ -1,0 +1,9 @@
+{
+  "results/summary.json": "1a103868bee9ddb1fe9f9865c302b016b730df5aa970dcf927995fec1d09be65",
+  "results/detector_metrics.csv": "e22c6241c07299fee80f2ad4b8273f17ef5900e14cf6b0256ac49882144f50af",
+  "results/subgroup_flags.csv": "f912cf751fee743ad94036b97a0bfe3bad8ad9a91239ed731d142d871517969b",
+  "results/scored_outputs.csv": "050b2206539f8c8e0aea7051962d23ebc7adf514d2b2ab6eb1881f100778960b",
+  "results/audited_summary.json": "2b72d8eac98806f0370d932479f8761831bec9d086ceafd6f0c6e66b5a79488d",
+  "results/audited_detector_metrics.csv": "ce3e7ecacf38c79c46b10adb3b1705942a207537b9d0e39f67c18b730ccb7e44",
+  "results/mask_summary.json": "ae7251d53419dd05a5bf44e85398ee342c3635ec9855a168c99669b150c2efcd"
+}

@@ -1,0 +1,30 @@
+model-specific adaptations, not the original published checkpoints. Three normalized-string sam-
+ples do not reproduce entailment-based semantic entropy, and our mean response features differ
+from original SEP token choices Kossen et al. [2024]. We do not implement a trained follow-up
+detector, train deceptive organisms, or perform a cross-model sweep. External MASK results have
+severe abstention and a modified prompt; they supply a bounded calibration check only.
+Implications for monitoring and broader impact. Pressure-matched correct answers and prompt-
+only features should accompany claims about deception probes. In this study, they reveal a risk of
+penalizing answers for the context in which they were produced. Detector scores should therefore
+not serve as ground-truth labels for dishonesty or as stand-alone evidence for sanctions. At the
+same time, these results provide no assurance that a low-scoring answer is honest. Misuse could
+take the form of overconfident monitoring decisions or treating diagnostic weaknesses as proof that
+monitoring is futile. Our contribution is a reproducible measurement protocol and its observed
+limits, not an operational certification of model honesty.
+6
+Conclusion
+We combine independent knowledge checks, matched incentive conditions, universal follow-ups,
+and frozen activation probes to examine false outputs from a fixed model. The study recovers only
+two incentive-misreport proxies and leaves 60–62% of false outputs unresolved. It therefore does not
+determine the fraction of falsehoods that are genuine lies or reliably estimate verified-misreport de-
+tection. It does show that high instructed-deception discrimination can coexist with perfect prompt-
+only separation and frequent flags on correct pressured answers.
+Future work should first establish adequate recovered-case yield with independently justified task
+incentives or a larger fixed model, then freeze a larger matched sample.
+Repeated context-
+preserving measurements, counterbalanced order, independent human/source adjudication, and
+pressure-matched correct negatives would strengthen the labels and controls. Only with sufficient
+support should follow-up probes, full semantic entropy, and held-out incentive generalization be
+compared. The present test set should remain a completed diagnostic rather than a target for prompt
+optimization.
+9

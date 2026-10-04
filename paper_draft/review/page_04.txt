@@ -1,0 +1,61 @@
+low evidence; all remaining questions are mixed. Strict scoring gives 229 known, 81 stable-wrong,
+240 low-evidence, and 50 mixed questions.
+Let Rqa indicate a correct private follow-up and P = {reward, reputation}. A candidate mismatch
+and a recovered misreport proxy are, respectively,
+Mqa = Fqa 1{q known} 1{a ∈P},
+Lqa = MqaRqa.
+(1)
+An uncertain-error proxy is a false neutral response on a low-evidence question. A stable-wrong
+repetition must actually repeat the wrong neutral mode; a different false answer from the same
+question remains unresolved. All other false outputs, including nonrecovering known mismatches
+and pressured low-evidence answers, are unresolved. These four output categories are mutually
+exclusive. We use “uncertain error” in this narrow operational sense, while acknowledging that
+stable misconceptions are also epistemic failures.
+For an equal mixture D of neutral, sham, reward, and reputation, we report each category’s share
+among all false outputs:
+bπk(D) =
+P
+q,a∈D 1{(q, a) has category k}
+P
+q,a∈D Fqa
+.
+(2)
+These are conditional operational shares, not causal mechanism proportions or deployment preva-
+lence. Recovery can result from new retrieval or correction. Nonrecovery can reflect anchoring,
+concealment, or retrieval failure. Neither outcome establishes intent or persistence of the original
+belief.
+Correctness and audit. Primary scoring uses normalized alias exact match. Abstentions, refusal
+patterns, and responses exceeding 16 normalized words are excluded from the false denominator. A
+blinded reference-equivalence audit uses qwen/qwen3.8-27b at temperature zero to evaluate shuf-
+fled question–answer pairs against references and aliases. It sees neither arm, belief state, follow-up
+relationship, nor probe score. The audit permits reference-supported paraphrases and numeric tol-
+erances, retains uncertain judgments as unresolved, and excludes truncated incorrect answers. It
+is fallible model assistance rather than human ground truth. Audited labels recompute behavioral
+strata and relabel evaluation for the same frozen probes; no audited label is used to refit them.
+3.3
+Probes, controls, and statistical analysis
+We teacher-force exact saved tokens and extract residual block outputs at layers 14 and 28. Features
+are either the mean over answer tokens, excluding EOS and padding, or the last pre-answer prompt
+token. Layer 28 precedes final normalization. Holding the prompt fixed while changing the contin-
+uation yields maximum prompt-feature difference 0.0, confirming that the prompt feature does not
+leak answer tokens. Response features can still retain prompt information.
+Probes use training-only standardization and L2 logistic regression with C = 1. The instructed-
+deception probe trains on 21 paired training questions with correct neutral and known-incorrect
+instructed responses: 42 rows total. Its positive labels do not require recovery or establish strategic
+intent. A neutral error probe trains on 288 valid neutral answers, including 135 errors. An entropy
+probe uses all 355 training questions, with 123 positives defined by independent normalized-answer
+entropy above 0.5 nats. With three independent samples, entropy is −P
+j ˆpj log ˆpj, where j indexes
+normalized strings rather than entailment clusters. Neither knowledge-label samples nor reference
+answers enter this feature.
+Controls include a character 2–4-gram TF-IDF answer-text classifier, answer length, mean negative
+log probability, sampled answer entropy, and prompt-only probes. Layer 14 is primary; layer 28
+and an Apollo-motivated C = 0.001 setting without an intercept are fixed sensitivities, not test-
+selected winners. Both pressure arms are absent from instructed/neutral probe training; reputation is
+the designated held-out incentive family. We do not fit the proposed supervised verified-mechanism
+classifier because training contains only one positive. A trained follow-up probe and full entailment-
+based SEP are not implemented.
+We evaluate held-out question responses with signed AUROC: higher scores always predict the
+stated positive class. We do not reverse uncertainty scores after observing test results. We also re-
+tain average precision, balanced accuracy, macro-F1, and confusion matrices in the artifacts. The
+4

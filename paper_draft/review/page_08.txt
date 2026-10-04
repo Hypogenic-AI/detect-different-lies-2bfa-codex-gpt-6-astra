@@ -1,0 +1,56 @@
+4.4
+Robustness and external checks
+Changing the known threshold from 3/5 to 4/5 to 5/5, always with independent verification, yields
+242, 229, and 213 known questions; 21, 18, and ten incentive candidates; and two, two, and one
+recovered proxies (table 7). Belief labeling therefore affects yield. Layer 28 and alternative regular-
+ization remain fixed sensitivity analyses rather than selected alternatives.
+Relabeling only held-out evaluation with audited correctness preserves the prompt confound. The
+instructed response probe reaches 0.976 versus prompt-only 1.000, with 12 instructed positives and
+14 uncertain negatives. For incentive candidates, response AUROC is 0.732 [0.464, 0.947] versus
+prompt-only 1.000, with four positives and 14 negatives. This analysis does not repair possible
+errors in the original training labels.
+A separate OpenRouter check comprises 400 successful calls on 100 questions across four arms.
+Strict false counts are 38 neutral, 43 sham, 41 reward, and 46 reputation. It supplies a behavioral
+check without repeated belief labels or activations; provider routing is not pinned, so we neither pool
+it with local data nor claim identical inference.
+On a 100-question adaptation of MASK known facts, 99 references admit an unambiguous yes/no
+mapping and 38 questions satisfy a five-sample binary known proxy. Neutral responses include 38
+correct, zero false, and 61 UNKNOWN; pressure responses include seven correct, seven false, and
+85 UNKNOWN. One ambiguous-reference item per arm is excluded. Only one pressure falsehood
+occurs on a known question, and no context-preserving follow-up exists here. The exploratory paired
+false increase has uncorrected exact p = 0.015625, but does not establish seven lies. The frozen
+response probe flags 16/38 neutral-correct answers and 3/7 pressure-correct answers; the prompt-
+only probe flags every correct answer in both arms. These are transfer and calibration failures in a
+modified protocol, not an official MASK score.
+5
+Discussion
+What does this study establish? The strongest supported finding is that prompt context is a major
+confound in this instructed-probe evaluation. A pre-answer feature separates the observed false-
+output conditions perfectly, and known-correct pressure responses frequently cross a threshold cal-
+ibrated in neutral contexts. Consequently, a high instructed-condition AUROC cannot by itself
+establish mechanism specificity. We do not infer that the response probe contains no belief sig-
+nal: one recovered test example cannot distinguish that possibility from prompt and retrieval fea-
+tures. Our results complement concerns about transfer, belief verification, and calibration in prior
+work Goldowsky-Dill et al. [2025], Kretschmar et al. [2025], Cooney et al. [2026], Hopkins et al.
+[2026]; they do not refute metrics obtained on different models, labels, or settings.
+Why is mechanism prevalence unresolved? The behavioral partition deliberately leaves most
+errors unassigned. Low recovered yield could reflect weak fictional incentives, limited model ca-
+pability, instruction hierarchy, anchoring during follow-up, or incomplete knowledge measurement.
+Neutral accuracy is indirect evidence about available beliefs; a private correction is an intervention
+that can change retrieval. The proxy also has a validity problem at the individual-example level: one
+recovered answer, “The seeme,” is an uninterpretable band-name fragment. Excluding it leaves only
+a Simferopol response followed by a Yalta correction. Neither example warrants a psychological-
+intent claim. The small operational share does not imply that deployed models rarely lie.
+Limits of model, data, and measurement. We evaluate one historical 7B model, one main gen-
+eration per arm, and fictional stakes. Fixed arm order and a single full-study seed limit sampling
+conclusions. TRIVIAQA and MASK may have appeared in pretraining; canonical entity grouping
+cannot eliminate every alias or topic dependency. Reference errors, strict normalization, numeric
+tolerance, and fallible same-family model auditing affect labels. We do not perform independent
+multi-human adjudication or comprehensive source verification. Conditioning on falsehood is post-
+treatment selection, and the equal arm mixture is artificial. In particular, our uncertain-error category
+covers only neutral low-evidence falsehoods; it is not an exhaustive category for pressured epistemic
+errors.
+Limits of detector comparisons. Only one recovered test positive, zero recovered reputation pos-
+itives, and 45 calibration responses preclude reliable verified-mechanism ranking or precise low-
+FPR claims. Small-cell bootstrap intervals cannot create evidence for unseen types. The probes are
+8

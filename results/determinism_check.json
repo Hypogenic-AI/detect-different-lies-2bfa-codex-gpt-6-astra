@@ -1,0 +1,12 @@
+{
+  "files": {
+    "results/summary.json": true,
+    "results/detector_metrics.csv": true,
+    "results/subgroup_flags.csv": true,
+    "results/scored_outputs.csv": true,
+    "results/audited_summary.json": true,
+    "results/audited_detector_metrics.csv": true,
+    "results/mask_summary.json": true
+  },
+  "all_equal": true
+}

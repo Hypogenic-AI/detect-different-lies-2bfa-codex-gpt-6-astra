@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrrrl@{}}
+\toprule
+Arm & Correct & False & Abstain & Cand. & Rec. & False rate (\%) [95\% CI] \\
+\midrule
+Neutral & 257 & 223 & 120 & 0 & 0 & 37.17 [33.17, 41.00] \\
+Sham & 276 & 253 & 71 & 0 & 0 & 42.17 [38.17, 46.00] \\
+Reward & 263 & 209 & 128 & 6 & 2 & 34.83 [31.16, 38.67] \\
+Reputation & 260 & 254 & 86 & 12 & 0 & 42.33 [38.33, 46.33] \\
+Instructed & 177 & 206 & 217 & 0 & 0 & 34.33 [30.67, 38.17] \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Strict behavioral outcomes, 600 responses per arm. Cand. and Rec. count incentive candidates and recovered proxies, respectively, so they exclude the instructed control. False-rate intervals use question bootstrap. The instructed arm has 39 false answers on known questions, 16 with correct follow-ups; these are separate controls.}
+\label{tab:behavior}
+\end{table}

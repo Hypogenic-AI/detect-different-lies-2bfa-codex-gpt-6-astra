@@ -1,0 +1,68 @@
+{
+  "greedy_replay": [
+    {
+      "id": "tb_693:verify:0",
+      "old": "UNKNOWN",
+      "new": "UNKNOWN",
+      "identical": true
+    },
+    {
+      "id": "sfq_888:verify:0",
+      "old": "UNKNOWN",
+      "new": "UNKNOWN",
+      "identical": true
+    },
+    {
+      "id": "qw_1068:verify:0",
+      "old": "Cuba",
+      "new": "Cuba",
+      "identical": true
+    },
+    {
+      "id": "dpql_2767:verify:0",
+      "old": "Harrogate",
+      "new": "Harrogate",
+      "identical": true
+    },
+    {
+      "id": "qw_2610:verify:0",
+      "old": "UNKNOWN",
+      "new": "UNKNOWN",
+      "identical": true
+    },
+    {
+      "id": "qf_1271:verify:0",
+      "old": "Birmingham",
+      "new": "Birmingham",
+      "identical": true
+    },
+    {
+      "id": "bb_409:verify:0",
+      "old": "40",
+      "new": "40",
+      "identical": true
+    },
+    {
+      "id": "sfq_22058:verify:0",
+      "old": "Alan Bradley",
+      "new": "Alan Bradley",
+      "identical": true
+    },
+    {
+      "id": "odql_1515:verify:0",
+      "old": "Harley-Davidson",
+      "new": "Harley-Davidson",
+      "identical": true
+    },
+    {
+      "id": "bb_9104:verify:0",
+      "old": "UNKNOWN",
+      "new": "UNKNOWN",
+      "identical": true
+    }
+  ],
+  "matches": 10,
+  "n": 10,
+  "same_prompt_different_continuation_max_abs_feature_difference": 0.0,
+  "prompt_causal_check_pass": true
+}

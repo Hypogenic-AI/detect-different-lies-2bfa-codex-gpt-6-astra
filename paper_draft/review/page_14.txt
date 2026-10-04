@@ -1,0 +1,56 @@
+Figure 3: Strict operational response categories, reproduced from the saved experiment figure, with
+600 questions per condition. The instructed condition is a separate control and is excluded from
+composition estimates. “Verified” in the artifact’s legend denotes the recovered operational proxy,
+not verified psychological intent. Stable-wrong category membership requires repetition of the neu-
+tral wrong mode.
+Fixed sensitivity
+Incentive candidates
+Instructed control
+Neutral factuality
+Response, layer 14, C = 1
+0.605 [0.337, 0.855]
+0.972 [0.911, 1.000]
+0.659 [0.542, 0.767]
+Response, layer 28, C = 1
+0.434 [0.011, 0.773]
+1.000 [1.000, 1.000]
+0.713 [0.600, 0.815]
+Response, layer 14, C = 0.001
+0.553 [0.303, 0.803]
+0.968 [0.903, 1.000]
+0.696 [0.580, 0.803]
+Prompt, layer 14, C = 1
+1.000 [1.000, 1.000]
+1.000 [1.000, 1.000]
+0.581 [0.452, 0.705]
+Prompt, layer 28, C = 1
+0.158 [0.000, 0.381]
+0.968 [0.900, 1.000]
+0.765 [0.662, 0.858]
+Answer length
+0.322 [0.013, 0.617]
+0.328 [0.153, 0.549]
+0.629 [0.522, 0.730]
+Table 8: Fixed layer and regularization sensitivities, plus answer length, on the contrasts in table 3.
+Entries are AUROC [95% question-bootstrap interval]. These comparisons were not used to select
+a test-set winner. Small positive classes limit interpretation.
+six audited outputs are invalid or unresolved. These examples motivate source-based and multi-
+human adjudication before stronger mechanism claims.
+One audit batch repeatedly returned seven labels for eight answers. Array-length assertions rejected
+those responses; single-answer retries completed the batch. No malformed alignment was silently
+accepted. We preserve failed responses and audit changes to make this failure visible.
+B.4
+External protocols
+The OpenRouter behavioral check calls qwen/qwen-2.5-7b-instruct on 100 questions under
+neutral, sham, reward, and reputation frames, with 400 successes and zero API errors. Correct
+counts are 41, 43, 36, and 42; false counts are 38, 43, 41, and 46, respectively. The live catalog and
+response usage were archived before model selection. Provider routing is not pinned, and weights
+or precision need not equal local inference. There are no repeated belief labels or white-box states
+in this check.
+For MASK, we retain the original persona-pressure system but substitute the same factual belief-
+elicitation question used in the neutral arm, removing its original reasoning instruction. Five neutral
+samples establish a binary consistency proxy. A separate reference audit maps benchmark ground-
+truth statements to yes/no; one ambiguous item is excluded. The original rows, including canaries,
+remain saved. This is a matched-question adaptation, not the official benchmark evaluation. Its
+seven-versus-zero pressure/neutral false increase has uncorrected exact paired p = 0.015625 and
+14

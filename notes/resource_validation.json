@@ -1,0 +1,410 @@
+{
+  "timestamp": "2026-10-04T07:44:21.298473+00:00",
+  "checks": [
+    {
+      "check": "papers/README.md",
+      "passed": true
+    },
+    {
+      "check": "datasets/README.md",
+      "passed": true
+    },
+    {
+      "check": "datasets/.gitignore",
+      "passed": true
+    },
+    {
+      "check": "code/README.md",
+      "passed": true
+    },
+    {
+      "check": "literature_review.md",
+      "passed": true
+    },
+    {
+      "check": "resources.md",
+      "passed": true
+    },
+    {
+      "check": "planning.md",
+      "passed": true
+    },
+    {
+      "check": "notes/reading_notes.md",
+      "passed": true
+    },
+    {
+      "check": "pyproject.toml",
+      "passed": true
+    },
+    {
+      "check": "uv.lock",
+      "passed": true
+    },
+    {
+      "check": "ten PDF papers",
+      "passed": true
+    },
+    {
+      "check": "PDF hash 2503.03750",
+      "passed": true
+    },
+    {
+      "check": "PDF pages 2503.03750",
+      "passed": true
+    },
+    {
+      "check": "all chunks 2503.03750",
+      "passed": true
+    },
+    {
+      "check": "PDF hash 2511.16035",
+      "passed": true
+    },
+    {
+      "check": "PDF pages 2511.16035",
+      "passed": true
+    },
+    {
+      "check": "all chunks 2511.16035",
+      "passed": true
+    },
+    {
+      "check": "PDF hash 2502.03407",
+      "passed": true
+    },
+    {
+      "check": "PDF pages 2502.03407",
+      "passed": true
+    },
+    {
+      "check": "all chunks 2502.03407",
+      "passed": true
+    },
+    {
+      "check": "PDF hash 2602.01425",
+      "passed": true
+    },
+    {
+      "check": "PDF pages 2602.01425",
+      "passed": true
+    },
+    {
+      "check": "all chunks 2602.01425",
+      "passed": true
+    },
+    {
+      "check": "PDF hash 2603.10003",
+      "passed": true
+    },
+    {
+      "check": "PDF pages 2603.10003",
+      "passed": true
+    },
+    {
+      "check": "all chunks 2603.10003",
+      "passed": true
+    },
+    {
+      "check": "PDF hash 2609.00180",
+      "passed": true
+    },
+    {
+      "check": "PDF pages 2609.00180",
+      "passed": true
+    },
+    {
+      "check": "all chunks 2609.00180",
+      "passed": true
+    },
+    {
+      "check": "PDF hash 2607.20479",
+      "passed": true
+    },
+    {
+      "check": "PDF pages 2607.20479",
+      "passed": true
+    },
+    {
+      "check": "all chunks 2607.20479",
+      "passed": true
+    },
+    {
+      "check": "PDF hash 2510.09033",
+      "passed": true
+    },
+    {
+      "check": "PDF pages 2510.09033",
+      "passed": true
+    },
+    {
+      "check": "all chunks 2510.09033",
+      "passed": true
+    },
+    {
+      "check": "PDF hash 2606.12618",
+      "passed": true
+    },
+    {
+      "check": "PDF pages 2606.12618",
+      "passed": true
+    },
+    {
+      "check": "all chunks 2606.12618",
+      "passed": true
+    },
+    {
+      "check": "PDF hash 2406.15927",
+      "passed": true
+    },
+    {
+      "check": "PDF pages 2406.15927",
+      "passed": true
+    },
+    {
+      "check": "all chunks 2406.15927",
+      "passed": true
+    },
+    {
+      "check": "data hash datasets/mask/continuations/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data rows datasets/mask/continuations/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "git ignores datasets/mask/continuations/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data hash datasets/mask/disinformation/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data rows datasets/mask/disinformation/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "git ignores datasets/mask/disinformation/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data hash datasets/mask/doubling_down_known_facts/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data rows datasets/mask/doubling_down_known_facts/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "git ignores datasets/mask/doubling_down_known_facts/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data hash datasets/mask/known_facts/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data rows datasets/mask/known_facts/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "git ignores datasets/mask/known_facts/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data hash datasets/mask/provided_facts/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data rows datasets/mask/provided_facts/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "git ignores datasets/mask/provided_facts/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data hash datasets/mask/statistics/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data rows datasets/mask/statistics/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "git ignores datasets/mask/statistics/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data hash datasets/triviaqa/rc.nocontext/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data rows datasets/triviaqa/rc.nocontext/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "git ignores datasets/triviaqa/rc.nocontext/test-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data hash datasets/triviaqa/rc.nocontext/train-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data rows datasets/triviaqa/rc.nocontext/train-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "git ignores datasets/triviaqa/rc.nocontext/train-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data hash datasets/triviaqa/rc.nocontext/validation-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "data rows datasets/triviaqa/rc.nocontext/validation-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "git ignores datasets/triviaqa/rc.nocontext/validation-00000-of-00001.parquet",
+      "passed": true
+    },
+    {
+      "check": "MASK count1000",
+      "passed": true
+    },
+    {
+      "check": "test all placeholder",
+      "passed": true
+    },
+    {
+      "check": "small valid sample datasets/samples/triviaqa_rc.nocontext_train-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "sample git-visible datasets/samples/triviaqa_rc.nocontext_train-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "small valid sample datasets/samples/mask_continuations_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "sample git-visible datasets/samples/mask_continuations_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "small valid sample datasets/samples/mask_known_facts_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "sample git-visible datasets/samples/mask_known_facts_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "small valid sample datasets/samples/triviaqa_rc.nocontext_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "sample git-visible datasets/samples/triviaqa_rc.nocontext_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "small valid sample datasets/samples/mask_disinformation_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "sample git-visible datasets/samples/mask_disinformation_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "small valid sample datasets/samples/mask_doubling_down_known_facts_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "sample git-visible datasets/samples/mask_doubling_down_known_facts_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "small valid sample datasets/samples/mask_provided_facts_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "sample git-visible datasets/samples/mask_provided_facts_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "small valid sample datasets/samples/triviaqa_rc.nocontext_validation-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "sample git-visible datasets/samples/triviaqa_rc.nocontext_validation-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "small valid sample datasets/samples/mask_statistics_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "sample git-visible datasets/samples/mask_statistics_test-00000-of-00001.json",
+      "passed": true
+    },
+    {
+      "check": "commit mask",
+      "passed": true
+    },
+    {
+      "check": "clone ignored mask",
+      "passed": true
+    },
+    {
+      "check": "commit apollo",
+      "passed": true
+    },
+    {
+      "check": "clone ignored apollo",
+      "passed": true
+    },
+    {
+      "check": "commit liars-bench",
+      "passed": true
+    },
+    {
+      "check": "clone ignored liars-bench",
+      "passed": true
+    },
+    {
+      "check": "commit semantic-entropy-probes",
+      "passed": true
+    },
+    {
+      "check": "clone ignored semantic-entropy-probes",
+      "passed": true
+    },
+    {
+      "check": "commit knowledge-recall",
+      "passed": true
+    },
+    {
+      "check": "clone ignored knowledge-recall",
+      "passed": true
+    },
+    {
+      "check": "probe submodule",
+      "passed": true
+    },
+    {
+      "check": "Anthropic saved",
+      "passed": true
+    }
+  ],
+  "papers": 10,
+  "datasets": 2,
+  "root_repositories": 5,
+  "probe_submodules": 1,
+  "baseline_inference_run": false
+}

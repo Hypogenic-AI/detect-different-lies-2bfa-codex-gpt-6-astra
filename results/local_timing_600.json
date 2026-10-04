@@ -1,0 +1,7 @@
+{
+  "seconds": 317.29294204711914,
+  "n_questions": 600,
+  "max_memory_bytes": 17916820992,
+  "gpu": "NVIDIA RTX A6000",
+  "torch": "2.6.0+cu124"
+}

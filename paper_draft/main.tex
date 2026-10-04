@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[final]{neurips_2025}  % NEURIPS style
+\usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+\usepackage{booktabs}  % REQUIRED: professional tables
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+
+% Dependencies required by the supplied command templates and lab lists.
+\usepackage{enumitem}
+\usepackage[noend]{algpseudocode}
+
+% Import command files
+\input{commands/math}
+\input{commands/general}
+\input{commands/macros}
+
+\bibliographystyle{plainnat}
+\title{Prompt Context Can Dominate Deception Probes:\\A Matched-Question Diagnostic Study}
+\author{Xiaoyan Bai and NeuriCo}
+
+\begin{document}
+\maketitle
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/methodology}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+\clearpage
+\bibliography{references}
+\clearpage
+\appendix
+\input{appendix/protocol}
+\input{appendix/supplementary_results}
+\input{appendix/reproducibility}
+\end{document}

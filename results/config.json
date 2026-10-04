@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "n_questions": 600,
+  "unique_validation_questions": 9960,
+  "splits": {
+    "train": 355,
+    "test": 121,
+    "validation": 124
+  },
+  "missing": 0,
+  "python": "3.12.8",
+  "knowledge_samples": 5,
+  "independent_entropy_samples": 3,
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "max_new_tokens": 32,
+  "generation_batch": 64,
+  "activation_batch": 8,
+  "layers": [
+    14,
+    28
+  ],
+  "dtype": "bfloat16"
+}

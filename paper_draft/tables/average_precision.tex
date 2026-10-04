@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Detector / control & Incentive candidates & Instructed control & Neutral factuality \\
+\midrule
+Instructed deception, response & 0.244 & 0.958 & 0.576 \\
+Instructed deception, prompt only & 1.000 & 1.000 & 0.560 \\
+Neutral error probe & 0.618 & 0.447 & 0.772 \\
+Answer-entropy probe (approx.) & 0.433 & 0.444 & 0.625 \\
+Deception, $C=0.001$ & 0.220 & 0.949 & 0.602 \\
+Answer-text classifier & 0.189 & 0.573 & 0.451 \\
+Mean negative log probability & 0.172 & 0.493 & 0.806 \\
+Independent answer entropy & 0.154 & 0.354 & 0.628 \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Average precision for the same frozen contrasts as \tabref{tab:detectors}. Positive-prevalence reference levels are $4/23=0.174$, $13/32=0.406$, and $38/97=0.392$, respectively. Values are descriptive, without post-hoc significance claims.}
+\label{tab:ap}
+\end{table}

@@ -1,0 +1,601 @@
+qid,state,correct_samples,verify_correct,modal,entropy,split
+wh_4198,known,5,True,ear,-0.0,train
+dpql_4350,known,5,True,australia,-0.0,test
+sfq_14787,known,5,True,whitechapel,-0.0,train
+sfq_22756,known,5,True,letchworth,-0.0,train
+qb_5097,known,5,True,snake,1.0986122886681096,train
+sfq_21166,known,5,True,1907,0.6365141682948128,train
+sfq_4281,mixed,3,True,october,-0.0,test
+odql_4883,low_evidence,0,False,unknown,0.6365141682948128,train
+sfq_6163,known,5,True,harlem river,-0.0,train
+qg_2596,mixed,2,False,unknown,0.6365141682948128,train
+qw_4039,low_evidence,0,False,unknown,-0.0,test
+jp_3082,known,5,True,walt whitman,-0.0,validation
+qg_3932,low_evidence,0,False,unknown,-0.0,train
+sfq_25614,known,5,True,ipswich town football club,0.6365141682948128,test
+qw_1792,low_evidence,0,False,double header,1.0986122886681096,train
+qw_2752,known,5,True,hummer,0.6365141682948128,train
+qw_3826,low_evidence,1,True,birds of feather,1.0986122886681096,validation
+sfq_21334,known,5,True,thumb,-0.0,test
+dpql_2767,low_evidence,0,False,harrogate,1.0986122886681096,train
+sfq_16169,low_evidence,0,False,unknown,-0.0,validation
+qw_5712,stable_wrong,0,False,£16000,0.6365141682948128,validation
+sfq_888,low_evidence,0,False,unknown,-0.0,train
+sfq_1971,stable_wrong,1,False,george anson,-0.0,train
+sfq_10508,known,5,True,thailand,-0.0,train
+sfq_26044,known,5,True,stieg larsson,-0.0,train
+qg_762,known,5,True,adams apple,-0.0,test
+sfq_25673,stable_wrong,0,False,carole bouquet,-0.0,train
+sfq_22058,stable_wrong,0,False,alan bradley,1.0986122886681096,train
+qf_2073,known,4,True,apple,-0.0,test
+sfq_23511,known,5,True,argentina,-0.0,test
+tc_538,stable_wrong,0,False,william maxwell,1.0986122886681096,test
+bb_8948,known,5,True,japan,-0.0,train
+odql_8321,stable_wrong,0,False,australia,-0.0,train
+qw_2610,mixed,2,False,unknown,0.6365141682948128,validation
+qf_2326,stable_wrong,0,False,1967,-0.0,validation
+qb_365,known,5,True,andes,-0.0,test
+odql_8296,mixed,2,False,krakow,1.0986122886681096,test
+odql_10142,stable_wrong,0,False,diego maradona,0.6365141682948128,train
+qb_2926,low_evidence,0,False,boulevardgetseconds,1.0986122886681096,train
+qw_13262,low_evidence,0,False,unknown,-0.0,train
+qb_9238,known,5,True,cricket,-0.0,validation
+qw_7702,known,5,True,crimean war,-0.0,test
+qf_1271,known,5,True,birmingham,-0.0,validation
+sfq_22144,known,5,True,giuseppe verdi,-0.0,train
+qf_83,known,5,True,zager and evans,-0.0,train
+wh_1784,stable_wrong,1,False,river foyle,0.6365141682948128,train
+odql_13898,known,5,True,south carolina,-0.0,train
+sfq_962,stable_wrong,0,False,dundee,0.6365141682948128,train
+qb_9676,low_evidence,1,False,unknown,-0.0,test
+odql_12819,mixed,3,True,raa raa noisy lion,1.0986122886681096,validation
+bb_409,known,5,True,40,-0.0,train
+sfq_12862,mixed,2,True,unknown,0.6365141682948128,validation
+odql_9858,low_evidence,0,False,edward iv,0.6365141682948128,train
+bb_7976,known,5,True,e,-0.0,test
+jp_2224,stable_wrong,0,False,belarus,1.0986122886681096,train
+qz_5082,known,5,True,indian rupee,-0.0,train
+qw_1068,known,5,True,cuba,-0.0,validation
+qg_1526,known,5,True,mercury,-0.0,validation
+bb_3823,known,5,True,france,-0.0,train
+tb_693,low_evidence,0,False,unknown,-0.0,train
+sfq_12896,low_evidence,0,False,unknown,-0.0,validation
+dpql_3549,low_evidence,0,False,unknown,-0.0,train
+odql_6171,known,5,True,belmopan,-0.0,train
+wh_2296,known,5,True,autobahns,0.6365141682948128,validation
+qb_10180,low_evidence,0,False,davidtexture answer unknown,1.0986122886681096,train
+odql_3698,known,5,True,cirrus,-0.0,train
+bb_7154,known,4,True,john denver,-0.0,validation
+sfq_25900,stable_wrong,0,False,boothroyd,1.0986122886681096,validation
+qw_13186,stable_wrong,0,False,crankshaft,-0.0,train
+odql_7409,known,5,True,portland,-0.0,test
+wh_1043,stable_wrong,0,False,gloucestershire,0.6365141682948128,train
+bb_9104,low_evidence,0,False,unknown,-0.0,train
+qz_1230,low_evidence,0,False,unknown,-0.0,validation
+bt_3734,mixed,4,False,plymouth rock,0.6365141682948128,train
+odql_1340,low_evidence,0,False,gail emms,1.0986122886681096,validation
+odql_7573,low_evidence,1,False,hyacinthus,0.6365141682948128,test
+sfq_11368,known,5,True,7,-0.0,train
+odql_9352,low_evidence,0,False,unknown,-0.0,test
+sfq_10540,low_evidence,0,False,unknown,-0.0,train
+bb_8203,known,5,True,grimaldi,-0.0,train
+tb_1945,known,5,True,origin of life,0.6365141682948128,train
+qb_5204,low_evidence,0,False,traction pad,0.6365141682948128,train
+sfq_11946,known,5,True,port wine,0.6365141682948128,train
+sfq_16558,stable_wrong,0,False,novel,-0.0,validation
+qg_749,known,5,True,gulf of aden,-0.0,validation
+qw_5510,stable_wrong,0,False,2,-0.0,validation
+sfq_1344,known,4,True,bullfighting,-0.0,train
+dpql_2785,low_evidence,0,False,burt lancaster,1.0986122886681096,validation
+bb_3316,low_evidence,0,False,unknown,-0.0,validation
+sfq_15980,known,5,True,sierra leone,-0.0,test
+tb_695,mixed,2,True,auschwitzbirkenau museum,1.0986122886681096,train
+dpql_5260,low_evidence,0,False,ian botham,-0.0,validation
+odql_1515,stable_wrong,0,False,harleydavidson,-0.0,validation
+dpql_3499,low_evidence,0,False,bolton wanderers,-0.0,train
+sfq_9927,mixed,3,True,spencer tracy,1.0986122886681096,test
+dpql_4014,known,5,True,ellen degeneres,-0.0,train
+sfq_2101,low_evidence,0,False,unknown,0.6365141682948128,train
+qg_1847,low_evidence,0,False,unknown,-0.0,train
+tc_664,low_evidence,0,False,unknown,-0.0,test
+qw_8478,stable_wrong,0,False,islam,-0.0,test
+qw_4635,known,5,True,football,0.6365141682948128,train
+dpql_4681,stable_wrong,0,False,shirley bassey,-0.0,train
+bb_3228,known,5,True,haiti,-0.0,validation
+bb_7955,stable_wrong,0,False,jack johnson,-0.0,validation
+dpql_5975,low_evidence,0,False,unknown,-0.0,train
+qb_9858,low_evidence,0,False,unknown,0.6365141682948128,train
+odql_2221,stable_wrong,0,False,carrot pie,1.0986122886681096,train
+qf_2680,low_evidence,0,False,unknown,-0.0,validation
+dpql_4889,known,5,True,henry hudson,-0.0,validation
+odql_1244,stable_wrong,0,False,igor,0.6365141682948128,train
+odql_434,low_evidence,0,False,unknown,-0.0,train
+sfq_24887,known,5,True,joanne harris,-0.0,train
+bt_307,known,5,True,colorado river,-0.0,train
+qb_5807,low_evidence,1,False,unknown,1.0986122886681096,train
+odql_14254,known,5,True,baffin island,-0.0,train
+sfq_4792,low_evidence,0,False,stairs,1.0986122886681096,train
+qg_2366,low_evidence,0,False,unknown,-0.0,train
+qg_2895,mixed,3,True,unknown,0.6365141682948128,test
+bt_1670,low_evidence,0,False,genre and portrait scenes,1.0986122886681096,test
+bb_20,low_evidence,0,False,dora baltea,0.6365141682948128,train
+tc_2256,low_evidence,0,False,unknown,-0.0,validation
+bb_1523,known,5,True,bullfighting,-0.0,train
+wh_3039,low_evidence,0,False,unknown,0.6365141682948128,test
+dpql_1648,known,5,True,richard wagner,-0.0,validation
+dpql_2136,low_evidence,0,False,unknown,-0.0,train
+odql_13485,low_evidence,0,False,unknown,-0.0,test
+jp_3609,known,4,True,shard,-0.0,train
+qb_2038,low_evidence,0,False,basketball shots,-0.0,train
+wh_1931,low_evidence,0,False,castell y bere,0.6365141682948128,train
+qg_1644,known,5,True,titanic,-0.0,train
+sfq_8071,known,5,True,tungsten,-0.0,train
+sfq_17255,stable_wrong,0,False,100 meters,-0.0,train
+qf_2994,known,5,True,sheeps milk,0.6365141682948128,train
+jp_1196,low_evidence,0,False,unknown,-0.0,train
+bb_5852,known,5,True,gold,-0.0,validation
+bb_7262,stable_wrong,0,False,cat,-0.0,validation
+bt_116,known,5,True,1215,-0.0,train
+odql_8813,low_evidence,0,False,hunted object was white rabbit,1.0986122886681096,train
+qb_5031,known,5,True,all presidents men,-0.0,train
+sfq_9836,known,5,True,melbourne,-0.0,train
+dpql_5238,low_evidence,0,False,timothy,0.6365141682948128,train
+qz_1745,known,5,True,horseracing,-0.0,validation
+jp_3645,known,5,True,taiwan,0.6365141682948128,train
+jp_1665,known,5,True,stalagmites,-0.0,train
+qb_503,known,5,True,bird,-0.0,train
+odql_10858,low_evidence,0,False,ayr united fc,1.0986122886681096,train
+qw_7195,mixed,3,True,richard grayson,1.0986122886681096,validation
+dpql_2190,low_evidence,0,False,nick hewer,1.0986122886681096,train
+bb_6164,known,5,True,abu dhabi,-0.0,validation
+bt_4342,low_evidence,0,False,whitney houston,-0.0,validation
+odql_8192,stable_wrong,0,False,obelix,0.6365141682948128,train
+dpql_4010,low_evidence,0,False,archery,-0.0,train
+sfq_7764,low_evidence,1,False,unknown,1.0986122886681096,train
+qw_13663,low_evidence,0,False,unknown,-0.0,train
+bt_212,low_evidence,0,False,unknown,-0.0,validation
+odql_13114,low_evidence,1,False,unknown,0.6365141682948128,train
+sfq_2085,low_evidence,0,False,unknown,-0.0,train
+odql_13868,stable_wrong,0,False,bill,-0.0,train
+jp_1476,known,5,True,breakfast at tiffanys,-0.0,train
+qz_256,known,5,True,1951,-0.0,train
+dpql_3550,low_evidence,0,False,unknown,-0.0,validation
+odql_6005,low_evidence,0,False,unknown,-0.0,test
+tb_924,mixed,5,False,cigars,0.6365141682948128,train
+qw_3157,low_evidence,0,False,unknown,0.6365141682948128,train
+odql_897,known,5,True,bat,-0.0,validation
+odql_1420,known,4,True,top of pops,0.6365141682948128,train
+bb_6092,low_evidence,0,False,leyton est station,1.0986122886681096,train
+wh_203,known,5,True,friends,-0.0,validation
+sfq_12020,known,5,True,vinegar joe,-0.0,train
+sfq_22922,low_evidence,0,False,unknown,-0.0,train
+tc_1702,low_evidence,0,False,unknown,-0.0,test
+tc_1735,mixed,3,True,3,-0.0,test
+tc_1254,known,5,True,belgium,-0.0,train
+bt_1537,mixed,2,True,tyne river,0.6365141682948128,train
+sfq_23530,mixed,2,True,right reverend libby lane,-0.0,train
+jp_4314,stable_wrong,0,False,tobacco,-0.0,validation
+bb_320,known,5,True,valley,-0.0,train
+qz_2537,low_evidence,0,False,99,1.0986122886681096,test
+qg_206,known,5,True,hawaii,0.6365141682948128,train
+qf_2918,known,5,True,richard doyly carte,0.6365141682948128,test
+bb_6744,low_evidence,0,False,unknown,-0.0,train
+bt_3406,stable_wrong,0,False,johnny cash,0.6365141682948128,train
+odql_13356,known,5,True,trainspotting,-0.0,train
+odql_9121,low_evidence,1,False,idris i,1.0986122886681096,test
+qb_9452,known,5,True,apple,-0.0,test
+sfq_13295,mixed,2,False,fingals cave,1.0986122886681096,train
+qw_854,low_evidence,0,False,unknown,-0.0,validation
+jp_3680,known,5,True,khyber pass,-0.0,train
+bb_1372,known,5,True,wind,-0.0,train
+qb_354,known,5,True,眼泪眼泪,0.6365141682948128,validation
+sfq_14898,known,5,True,journey,-0.0,train
+odql_3641,low_evidence,0,False,robert earl keating,1.0986122886681096,train
+bt_2646,low_evidence,0,False,spermacote,0.6365141682948128,validation
+qw_11892,mixed,3,False,1832,-0.0,train
+bb_6729,mixed,5,False,weirs,-0.0,train
+qz_347,low_evidence,0,False,unknown,-0.0,validation
+qw_9028,low_evidence,0,False,unknown,0.6365141682948128,train
+sfq_22941,known,5,True,yellow,-0.0,test
+qb_7916,mixed,3,False,fish,0.6365141682948128,train
+odql_2965,mixed,3,False,benjamin britten,0.6365141682948128,test
+sfq_735,known,5,True,stephen king,-0.0,train
+qw_14862,low_evidence,0,False,unknown,-0.0,test
+odql_6143,mixed,3,True,rotary international,0.6365141682948128,train
+qz_2768,known,5,True,spandau ballet,-0.0,test
+sfq_1748,stable_wrong,0,False,dalek,-0.0,train
+sfq_15587,low_evidence,0,False,unknown,-0.0,train
+sfq_1887,mixed,3,True,poll tax,-0.0,validation
+dpql_3758,low_evidence,0,False,unknown,-0.0,train
+wh_289,known,5,True,sicily,-0.0,train
+sfq_24329,low_evidence,1,False,unknown,1.0986122886681096,train
+odql_1056,low_evidence,1,True,edinburgh,0.6365141682948128,validation
+sfq_16259,stable_wrong,0,False,judo,-0.0,validation
+sfq_20306,known,5,True,12,-0.0,test
+qb_4324,known,5,True,surrey,-0.0,validation
+jp_2203,known,5,True,checkers,-0.0,train
+sfq_9465,known,5,True,george bailey,-0.0,train
+sfq_11985,known,5,True,raging bull,-0.0,train
+qg_86,low_evidence,0,False,bird,-0.0,train
+sfq_2538,low_evidence,0,False,gramps,0.6365141682948128,test
+dpql_560,known,5,True,tintin,-0.0,validation
+qg_3859,known,5,True,lilliputians,-0.0,train
+wh_1787,known,5,True,touchstone,-0.0,train
+qz_5728,stable_wrong,0,False,bobby charlton,-0.0,train
+dpql_2119,low_evidence,0,False,bath racecourse,1.0986122886681096,train
+bb_1254,low_evidence,0,False,unknown,1.0986122886681096,train
+qz_5410,low_evidence,0,False,unknown,-0.0,train
+qb_8927,mixed,4,False,st edwards crown,0.6365141682948128,train
+qb_5157,low_evidence,0,True,unknown,-0.0,test
+bt_61,low_evidence,0,False,unknown,-0.0,validation
+qg_2424,mixed,2,False,eightball,0.6365141682948128,validation
+bt_291,low_evidence,0,False,unknown,-0.0,test
+sfq_22012,low_evidence,1,False,apricot,0.6365141682948128,train
+qb_1901,known,5,True,yellow,-0.0,test
+sfq_24958,known,5,True,bauxite,-0.0,train
+odql_13214,known,5,True,violin,-0.0,test
+sfq_16690,known,5,True,nunc dimittis,-0.0,train
+qf_1507,low_evidence,0,False,vernon dalhart,-0.0,train
+qb_203,known,5,True,argentina,-0.0,test
+sfq_15024,low_evidence,0,False,unknown,-0.0,train
+qw_11772,known,5,True,australia,-0.0,test
+odql_5054,stable_wrong,0,False,carry on sleeping,0.6365141682948128,test
+dpql_4722,known,5,True,drum set,0.6365141682948128,train
+dpql_2349,mixed,2,True,gene hackman,-0.0,train
+qg_1993,known,5,True,sherlock holmes,-0.0,train
+jp_3910,low_evidence,0,False,morgan家族,1.0986122886681096,train
+bb_476,known,5,True,apollo 11,-0.0,train
+qg_2556,low_evidence,1,False,unknown,0.6365141682948128,train
+qz_6036,low_evidence,0,True,bernard berry,0.6365141682948128,validation
+sfq_24763,mixed,2,True,konstantin chernenko,1.0986122886681096,test
+sfq_17007,known,5,True,taming of shrew,-0.0,train
+tc_261,mixed,2,True,brigadoon,0.6365141682948128,train
+sfq_2414,known,5,True,mary magdalene,-0.0,test
+qw_3074,known,5,True,pogrom,-0.0,validation
+qf_3056,low_evidence,0,False,unknown,0.6365141682948128,train
+wh_2164,known,5,True,robert hooke,-0.0,train
+dpql_3015,known,5,True,photography,-0.0,train
+sfq_5388,known,5,True,m69,-0.0,train
+bb_1352,mixed,3,True,tinker tailor soldier spy,-0.0,train
+qf_3440,known,5,True,lighthouse keeper,-0.0,train
+qz_1720,stable_wrong,1,False,young,-0.0,test
+jp_1163,known,5,True,flesh,-0.0,train
+bt_2287,low_evidence,0,False,unknown,-0.0,train
+qz_847,low_evidence,0,False,unknown,-0.0,validation
+bb_6024,mixed,5,False,fire,0.6365141682948128,train
+qw_3116,mixed,2,True,east berlin and west berlin,1.0986122886681096,test
+bb_3560,low_evidence,0,False,deer,0.6365141682948128,train
+qz_3152,known,5,True,duke of wellington,-0.0,train
+qf_2195,known,5,True,andre agassi,-0.0,train
+qw_9299,known,5,True,thor,-0.0,train
+bb_9499,low_evidence,0,False,elevens plus two,1.0986122886681096,train
+qb_8351,low_evidence,0,False,mallard,1.0986122886681096,train
+bb_4415,low_evidence,0,False,unknown,-0.0,test
+qb_5390,low_evidence,0,False,unknown,0.6365141682948128,train
+odql_7023,known,5,True,arctic monkeys,-0.0,train
+qb_2148,known,5,True,bikini,0.6365141682948128,test
+qw_875,low_evidence,0,False,gila monster,-0.0,test
+odql_3170,low_evidence,0,False,william spencer,1.0986122886681096,train
+odql_4631,known,5,True,ron howard,-0.0,train
+qw_13108,known,5,True,labyrinth,-0.0,validation
+sfq_2286,known,4,True,boyle,-0.0,train
+qg_670,low_evidence,0,False,unknown,-0.0,train
+qb_9823,known,5,True,third,0.6365141682948128,test
+bb_9463,mixed,2,False,carpology is study of fruits and seeds,-0.0,test
+qb_3103,known,5,True,adam richman takes on food challenges in us television series man v food,-0.0,train
+sfq_8876,known,5,True,violin,-0.0,test
+dpql_6083,known,5,True,le corbusier,-0.0,train
+qb_7062,known,5,True,may,-0.0,train
+sfq_20946,low_evidence,1,False,liberal democrats,0.6365141682948128,train
+qw_57,known,5,True,philosophers stone,-0.0,train
+sfq_23341,low_evidence,0,False,unknown,-0.0,validation
+sfq_18988,known,5,True,stockton and darlington railway,-0.0,test
+dpql_1410,stable_wrong,1,False,edouard manet,0.6365141682948128,test
+sfq_1137,mixed,2,False,kyogen,0.6365141682948128,test
+wh_2932,mixed,3,True,red bull,-0.0,validation
+qw_3582,known,5,True,river severn,-0.0,train
+sfq_17918,known,5,True,aaron,-0.0,test
+qb_280,low_evidence,1,True,rugby union,0.6365141682948128,validation
+bt_2428,mixed,2,False,royal troon golf club,-0.0,train
+sfq_22709,known,5,True,el greco,-0.0,test
+wh_1889,low_evidence,0,False,tim roth,0.6365141682948128,validation
+jp_4302,low_evidence,1,False,death penalty for juveniles,1.0986122886681096,train
+jp_2481,known,5,True,new orleans,-0.0,train
+dpql_2756,known,5,True,adonis,-0.0,test
+bb_6480,known,5,True,glycerol,0.6365141682948128,train
+sfq_7152,low_evidence,0,False,unknown,-0.0,validation
+qb_9432,known,5,True,june,-0.0,train
+qw_4463,known,5,True,asaph hall,-0.0,test
+sfq_12193,low_evidence,0,False,unknown,-0.0,test
+odql_9226,known,5,True,mulberry,-0.0,train
+qw_4244,known,5,True,prime number,-0.0,train
+qb_7797,low_evidence,0,False,unknown,-0.0,validation
+sfq_4779,low_evidence,0,False,unknown,-0.0,validation
+sfq_22266,low_evidence,0,False,lavender hill mob,1.0986122886681096,test
+odql_13489,low_evidence,0,False,unknown,-0.0,validation
+qw_5942,low_evidence,0,False,unknown,-0.0,train
+qg_966,known,5,True,harry s truman,-0.0,train
+bt_958,stable_wrong,0,False,del boy,-0.0,train
+sfq_6881,known,4,True,hector berlioz,-0.0,train
+qz_3393,known,5,True,bruce,-0.0,train
+wh_4170,low_evidence,0,False,1993,0.6365141682948128,validation
+bt_858,known,5,True,elizabeth montgomery,-0.0,train
+bb_4655,low_evidence,0,False,unknown,-0.0,validation
+bb_497,low_evidence,0,False,肉色蕾丝和羽毛,1.0986122886681096,train
+qg_3942,known,4,True,ouija,-0.0,validation
+odql_7728,stable_wrong,0,False,blaise pascal,0.6365141682948128,validation
+qw_6112,known,5,True,country club,-0.0,train
+sfq_10678,low_evidence,0,False,material girl,-0.0,validation
+wh_4082,known,4,True,novak djokovic,-0.0,validation
+qg_869,known,5,True,netherlands,-0.0,validation
+qw_7938,known,5,True,scotland,-0.0,train
+sfq_14642,low_evidence,0,False,unknown,0.6365141682948128,train
+jp_4252,low_evidence,0,False,john prine,-0.0,train
+bt_2692,stable_wrong,0,False,audi,0.6365141682948128,train
+qw_1033,known,5,True,arthur wellesley 1st duke of wellington,-0.0,train
+tc_2280,low_evidence,1,False,unknown,-0.0,train
+odql_9743,low_evidence,0,False,graham lynn tyler foyle,1.0986122886681096,validation
+dpql_3227,low_evidence,0,False,neville,1.0986122886681096,train
+bt_3103,mixed,2,False,unknown,-0.0,train
+sfq_15836,low_evidence,0,False,waste land,-0.0,test
+jp_65,known,5,True,spain,-0.0,train
+tc_1700,stable_wrong,0,False,2 years,-0.0,train
+qw_6361,known,5,True,60,-0.0,train
+bt_1721,known,5,True,march,-0.0,train
+qg_3828,known,5,True,nova,-0.0,test
+qg_2820,known,5,True,david crockett,0.6365141682948128,test
+jp_1920,low_evidence,0,False,smirnoff ice,1.0986122886681096,train
+qb_8918,known,5,True,grapes of wrath,-0.0,train
+sfq_227,stable_wrong,0,False,tapering to point at both ends,-0.0,train
+jp_3754,known,5,True,greece,-0.0,validation
+qz_5039,known,5,True,abraham lincoln,-0.0,train
+bb_912,known,5,True,jerez,-0.0,test
+sfq_21708,low_evidence,0,False,unknown,-0.0,test
+qw_15382,low_evidence,1,False,unknown,-0.0,train
+qz_2426,known,5,True,1960s,-0.0,test
+odql_9975,known,5,True,pillow book,-0.0,train
+odql_8437,low_evidence,0,False,unknown,0.6365141682948128,test
+qb_4225,known,5,True,tashkent,-0.0,validation
+sfq_24711,known,5,True,narendra modi,-0.0,test
+sfq_298,stable_wrong,0,False,sussex,-0.0,train
+qw_15544,low_evidence,0,False,unknown,-0.0,validation
+qf_158,low_evidence,0,True,anthony eden,-0.0,train
+tc_2524,known,5,True,third crusade,-0.0,train
+qb_1068,known,5,True,bees,0.6365141682948128,train
+sfq_9872,known,5,True,south african,-0.0,train
+qf_2472,known,5,True,dublin,-0.0,train
+sfq_6658,stable_wrong,0,False,beauty,-0.0,train
+qw_10894,known,5,True,johann strauss ii,-0.0,train
+qw_6536,low_evidence,0,False,unknown,-0.0,train
+qb_2928,known,5,True,australia,-0.0,test
+bb_113,low_evidence,0,False,unknown,0.6365141682948128,train
+dpql_1096,low_evidence,0,False,unknown,-0.0,validation
+sfq_9787,mixed,3,False,windmill,0.6365141682948128,train
+dpql_3579,low_evidence,0,False,cuckoo,-0.0,train
+qb_4152,low_evidence,0,False,unknown,-0.0,train
+sfq_11235,known,5,True,ataturk,-0.0,validation
+dpql_5121,stable_wrong,0,False,complain,-0.0,test
+tc_1816,low_evidence,0,False,unknown,0.6365141682948128,validation
+qz_2601,stable_wrong,0,False,95,-0.0,validation
+odql_9204,known,5,True,watches,0.6365141682948128,train
+odql_10253,known,5,True,ludwig van beethoven,-0.0,train
+qf_2378,low_evidence,0,False,unknown,-0.0,train
+odql_6831,stable_wrong,0,False,epsom downs racecourse,-0.0,test
+sfq_18876,low_evidence,1,True,sudan south sudan,1.0986122886681096,train
+qb_4949,low_evidence,0,False,unknown,-0.0,train
+qw_9535,low_evidence,0,False,richard rodgers,1.0986122886681096,train
+qb_8138,stable_wrong,0,False,thomas edison national historical park laboratory,-0.0,validation
+dpql_1989,known,5,True,thomas tank engine,-0.0,validation
+qw_12688,mixed,4,False,air chief marshal sir hugh dowding,0.6365141682948128,train
+jp_159,mixed,2,False,unknown,-0.0,train
+odql_5703,low_evidence,1,False,sharlto copley,0.6365141682948128,test
+qw_2672,stable_wrong,0,False,baker street,-0.0,test
+qw_14606,mixed,2,False,unknown,0.6365141682948128,train
+qw_4372,low_evidence,0,False,unknown,-0.0,train
+jp_3095,known,5,True,steals,0.6365141682948128,train
+odql_1628,known,5,True,blue and yellow,-0.0,train
+sfq_21761,known,5,True,steel,-0.0,test
+bb_5285,low_evidence,0,False,tootsie rolls,-0.0,train
+qb_2545,known,5,True,5,0.6365141682948128,validation
+sfq_1537,known,5,True,tin,-0.0,train
+sfq_16651,low_evidence,0,False,unknown,-0.0,validation
+sfq_16104,known,5,True,york,-0.0,validation
+tc_1826,low_evidence,0,False,tide is high,1.0986122886681096,validation
+qz_1380,low_evidence,0,False,unknown,0.6365141682948128,test
+sfq_7383,low_evidence,0,False,unknown,0.6365141682948128,test
+qb_930,known,4,True,baton rouge,-0.0,train
+odql_13981,low_evidence,0,False,bing crosby,1.0986122886681096,test
+qz_4991,known,5,True,crusades,-0.0,train
+qf_85,low_evidence,0,False,beatles,0.6365141682948128,train
+jp_3168,known,5,True,penultimate,-0.0,train
+qw_3467,known,5,True,war of roses,-0.0,train
+tb_111,known,5,True,origami,-0.0,train
+sfq_9920,low_evidence,0,False,anna christie,0.6365141682948128,validation
+wh_3298,known,5,True,mantle,-0.0,train
+wh_3326,known,5,True,jurassic,-0.0,train
+sfq_2500,known,5,True,antarctica,-0.0,train
+odql_1641,low_evidence,0,False,死亡手推车,1.0986122886681096,train
+qw_2632,stable_wrong,0,False,ambassador to united nations,-0.0,validation
+bb_2276,known,5,True,scotland,-0.0,train
+bb_4827,mixed,2,False,great american chocolate bar is eponymously better known as hershey bar,1.0986122886681096,test
+tc_2457,stable_wrong,0,False,laccadive islands,-0.0,validation
+sfq_7366,stable_wrong,0,False,1,-0.0,train
+qw_14413,stable_wrong,0,False,water,-0.0,test
+qg_961,low_evidence,0,False,uneven bars,0.6365141682948128,train
+qg_736,low_evidence,0,False,unknown,-0.0,train
+qw_8531,mixed,4,False,illinois,-0.0,train
+bb_8442,known,4,True,wales,-0.0,test
+sfq_13243,low_evidence,1,True,unknown system,1.0986122886681096,train
+sfq_15401,known,5,True,xenophon,-0.0,train
+bt_3368,mixed,2,False,behind goal line,1.0986122886681096,test
+sfq_24027,known,4,True,samson,-0.0,train
+wh_1222,mixed,3,False,lavoisier,0.6365141682948128,train
+qb_4017,known,5,True,privet,-0.0,validation
+bt_3539,mixed,3,True,kent,0.6365141682948128,train
+sfq_3837,low_evidence,0,True,8 points,0.6365141682948128,train
+sfq_2143,low_evidence,0,False,anne boleyn,0.6365141682948128,train
+odql_14853,known,4,True,1982,-0.0,train
+dpql_3790,known,5,True,vermont,-0.0,validation
+jp_4082,low_evidence,1,False,unknown,-0.0,validation
+sfq_19415,low_evidence,0,False,unknown,-0.0,train
+dpql_3912,low_evidence,0,False,unknown,-0.0,test
+sfq_17511,low_evidence,1,False,antiques roadshow,-0.0,train
+qg_3086,stable_wrong,0,False,right side,0.6365141682948128,test
+jp_1381,known,5,True,michelin,0.6365141682948128,validation
+sfq_13367,low_evidence,0,False,1987,0.6365141682948128,train
+tc_938,low_evidence,1,False,golden retriever dog,0.6365141682948128,train
+dpql_3699,low_evidence,0,False,unknown,0.6365141682948128,train
+odql_5334,low_evidence,0,False,david moyes,-0.0,test
+tc_2838,known,5,True,bryophytes,0.6365141682948128,train
+sfq_1652,low_evidence,0,False,ronald reagan,1.0986122886681096,train
+qw_6554,known,5,True,etching,-0.0,train
+qf_127,low_evidence,0,False,paul hunter,0.6365141682948128,train
+odql_522,low_evidence,0,False,unknown,-0.0,train
+sfq_24637,low_evidence,0,False,unknown,-0.0,validation
+qw_181,known,5,True,spain,-0.0,train
+odql_11899,low_evidence,0,False,unknown,-0.0,test
+sfq_22962,low_evidence,0,False,simon le bon,1.0986122886681096,train
+sfq_19581,known,5,True,churchill downs,-0.0,train
+sfq_6053,low_evidence,0,False,royal observatory greenwich,1.0986122886681096,validation
+dpql_2554,known,5,True,pilgrimage to mecca,-0.0,train
+jp_1852,known,5,True,star trek next generation,-0.0,test
+jp_126,known,5,True,scopes monkey trial was really about teaching of evolution in schools and conflict between science and religion,-0.0,train
+odql_8042,low_evidence,0,False,unknown,-0.0,train
+bt_2708,low_evidence,0,False,unknown,-0.0,train
+odql_13246,known,5,True,rowan atkinson,-0.0,test
+odql_13948,low_evidence,0,False,unknown,-0.0,validation
+qg_2053,mixed,3,True,war,-0.0,train
+sfq_18637,known,5,True,horse racing,-0.0,validation
+dpql_3818,mixed,3,True,funchal,-0.0,train
+qb_10183,known,5,True,russia,-0.0,test
+qw_6240,stable_wrong,0,False,united states naval academy,-0.0,validation
+qw_15307,known,5,True,wuthering heights,-0.0,test
+qb_7865,known,5,True,foyles,-0.0,train
+qz_4047,low_evidence,0,False,unknown,0.6365141682948128,test
+qw_2309,known,5,True,unesco,-0.0,validation
+sfq_24460,known,5,True,zachary taylor,-0.0,test
+qb_306,low_evidence,0,False,unknown,-0.0,test
+sfq_18243,known,5,True,martin van buren,-0.0,train
+qz_5898,low_evidence,0,False,melissa davis,1.0986122886681096,test
+sfq_5888,known,4,True,1135,-0.0,train
+qb_7937,known,5,True,bonar law,-0.0,validation
+odql_8662,low_evidence,0,False,unknown,0.6365141682948128,train
+bb_5443,low_evidence,1,False,usher of tower,1.0986122886681096,train
+qb_9498,known,5,True,mary poppins,-0.0,train
+tc_1098,low_evidence,0,False,tyler perry,1.0986122886681096,validation
+bb_5182,known,5,True,farmer or peasant,0.6365141682948128,validation
+sfq_3201,stable_wrong,0,False,wicked,-0.0,train
+bt_3299,low_evidence,0,False,johnny depp,0.6365141682948128,train
+odql_10051,low_evidence,0,False,unknown,-0.0,test
+qb_355,known,5,True,david bowie,-0.0,train
+wh_2594,known,5,True,james cameron,-0.0,test
+qg_2126,known,5,True,taste,-0.0,test
+qz_4175,low_evidence,0,False,unknown,-0.0,train
+odql_7686,known,5,True,streetcar named desire,-0.0,test
+sfq_24237,known,5,True,6,-0.0,test
+qb_5996,known,5,True,athens,-0.0,train
+wh_1527,low_evidence,0,False,unknown,0.6365141682948128,train
+sfq_2820,known,5,True,ali macgraw,-0.0,test
+bb_1937,known,5,True,switzerland,-0.0,train
+qb_5715,stable_wrong,0,False,fyodor dostoevsky,-0.0,train
+qb_3225,known,5,True,getafix,-0.0,test
+dpql_827,known,4,True,bridge,0.6365141682948128,validation
+qb_7761,known,5,True,cordelia,-0.0,test
+qf_3155,stable_wrong,0,False,cary elwes,1.0986122886681096,validation
+sfq_5831,mixed,3,True,deadly nightshade,0.6365141682948128,train
+qb_8996,stable_wrong,0,False,tony blackburn,1.0986122886681096,train
+bt_2066,known,5,True,airship lz 129 hindenburg,-0.0,validation
+jp_2490,known,5,True,charles darwin,-0.0,validation
+jp_2608,low_evidence,0,False,unknown,-0.0,train
+sfq_16522,known,5,True,sir edwin henry landseer,-0.0,train
+odql_7007,low_evidence,0,False,newmarket races,0.6365141682948128,train
+qf_1245,known,5,True,colorado river,-0.0,train
+tc_1152,known,4,True,george iii,0.6365141682948128,test
+bb_951,known,5,True,kyrgyzstan,-0.0,train
+qw_14911,known,5,True,gin,-0.0,test
+odql_5501,low_evidence,0,False,unknown,-0.0,train
+sfq_4730,low_evidence,0,False,1809,-0.0,validation
+sfq_20162,low_evidence,0,False,kidderminster and bridgnorth railway,0.6365141682948128,validation
+qw_16567,low_evidence,0,False,advocaat lemonade,0.6365141682948128,train
+qw_12922,known,5,True,proxima centauri,-0.0,test
+wh_2955,known,5,True,france,-0.0,train
+sfq_19275,low_evidence,0,False,amberyellow,0.6365141682948128,test
+qf_2422,stable_wrong,1,False,january,-0.0,train
+odql_1127,known,5,True,blenheim,-0.0,train
+sfq_11498,stable_wrong,0,False,gilt gilding,1.0986122886681096,train
+dpql_3982,known,5,True,elton john,-0.0,train
+qg_4124,known,5,True,birds,-0.0,validation
+dpql_192,low_evidence,0,False,unknown,-0.0,validation
+qf_623,low_evidence,0,False,unknown,1.0986122886681096,train
+bb_7221,stable_wrong,0,False,silverstone,-0.0,train
+sfq_25968,low_evidence,0,False,unknown,1.0986122886681096,train
+qg_4408,low_evidence,0,False,unknown,-0.0,train
+qw_7917,known,5,True,black panther party,-0.0,test
+qg_3338,low_evidence,0,False,unknown,-0.0,train
+sfq_11145,low_evidence,0,False,unknown,-0.0,train
+qw_15086,known,5,True,smoking,-0.0,train
+bb_1009,known,5,True,google wave,-0.0,train
+sfq_19279,low_evidence,0,False,frederic chopin,0.6365141682948128,train
+odql_14578,low_evidence,0,False,unknown,-0.0,validation
+qg_2075,low_evidence,1,False,unknown,0.6365141682948128,validation
+qw_5351,known,5,True,american civil war,-0.0,train
+sfq_14452,low_evidence,0,False,newtown,0.6365141682948128,train
+sfq_178,known,5,True,pulsar,-0.0,train
+bt_2247,low_evidence,0,False,founders day,-0.0,train
+qw_13906,known,5,True,japan,-0.0,train
+qb_2577,low_evidence,0,False,40,-0.0,validation
+sfq_20142,low_evidence,0,False,unknown,-0.0,train
+qw_3664,low_evidence,0,False,jacques chirac,0.6365141682948128,train
+qb_8227,low_evidence,0,False,glynis johns,1.0986122886681096,train
+bt_3225,low_evidence,0,False,suicide silence,0.6365141682948128,train
+bt_2348,low_evidence,0,False,jumps,-0.0,train
+qw_7594,known,5,True,sherlock holmes is associated with deerstalker hat,-0.0,validation
+bb_9374,known,5,True,australia,-0.0,test
+odql_4978,known,5,True,james bond,-0.0,train
+bb_3148,known,5,True,dice,-0.0,train
+odql_9086,low_evidence,0,False,unknown,-0.0,validation
+tb_422,known,5,True,australia,-0.0,test
+qb_10019,stable_wrong,0,False,peterborough,-0.0,train
+qf_995,known,5,True,jawbone,-0.0,train
+wh_749,low_evidence,0,False,prince of wales theatre,1.0986122886681096,train
+sfq_10705,known,5,True,jura,-0.0,train
+sfq_7703,low_evidence,0,False,stoke city,1.0986122886681096,train
+sfq_7589,low_evidence,0,False,henry vii,0.6365141682948128,validation
+bt_4517,known,5,True,tamar,-0.0,train
+odql_14342,stable_wrong,0,False,german army,-0.0,validation
+sfq_15150,low_evidence,0,False,chris huhne,-0.0,test
+sfq_22920,low_evidence,0,False,unknown,-0.0,test
+odql_7185,low_evidence,0,False,uwe mikosch,1.0986122886681096,train
+qw_5692,known,5,True,clues,-0.0,train
+dpql_5266,low_evidence,0,False,unknown,1.0986122886681096,train
+qb_7085,known,5,True,basketball,-0.0,validation
+odql_2213,mixed,3,True,gondoliers,0.6365141682948128,validation
+qb_4695,known,5,True,spain,-0.0,train
+odql_14686,known,5,True,switzerland,-0.0,train
+sfq_1804,known,5,True,ikea,-0.0,validation
+qw_1914,known,5,True,gulf stream,-0.0,test
+qz_6396,stable_wrong,0,False,parade,-0.0,train
+wh_871,low_evidence,0,False,mr monopoly,-0.0,train
+sfq_10536,known,5,True,4,-0.0,validation
+qb_4157,low_evidence,0,False,unknown,-0.0,train
+odql_11166,known,5,True,microsoft,-0.0,train
+qg_196,known,5,True,mike hammer,-0.0,test
+jp_2976,known,5,True,romaine butterhead are types of lettuce,0.6365141682948128,train
+qb_5124,known,5,True,russell crowe,-0.0,train
+qw_1367,low_evidence,0,False,unknown,-0.0,validation
+sfq_19414,low_evidence,0,False,those who hear and obey his words,0.6365141682948128,validation
+odql_3695,low_evidence,0,False,unknown,-0.0,test
+qw_2173,known,5,True,golf,-0.0,train
+odql_11091,known,4,True,yalta,0.6365141682948128,test
+odql_2370,stable_wrong,0,False,algeria,0.6365141682948128,test
+qw_1503,low_evidence,0,False,unknown,0.6365141682948128,train
+qz_2289,stable_wrong,0,False,manchester united,-0.0,train
+odql_11741,stable_wrong,0,False,danish flag,-0.0,train
+sfq_20732,known,5,True,river severn,-0.0,train
+qw_10186,low_evidence,0,False,swimming,0.6365141682948128,train
+sfq_10619,mixed,3,True,our american cousin,1.0986122886681096,test
+qb_1415,low_evidence,0,False,vauxhall viva,1.0986122886681096,train
+tc_719,low_evidence,0,False,unknown,-0.0,train
+dpql_5408,stable_wrong,0,False,beatles,-0.0,test
+odql_5358,mixed,3,False,michael foot,-0.0,train
+qw_8269,known,5,True,hawaii,0.6365141682948128,validation

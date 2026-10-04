@@ -1,0 +1,106 @@
+Arm
+Correct
+False
+Abstain
+Cand.
+Rec.
+False rate (%) [95% CI]
+Neutral
+257
+223
+120
+0
+0
+37.17 [33.17, 41.00]
+Sham
+276
+253
+71
+0
+0
+42.17 [38.17, 46.00]
+Reward
+263
+209
+128
+6
+2
+34.83 [31.16, 38.67]
+Reputation
+260
+254
+86
+12
+0
+42.33 [38.33, 46.33]
+Instructed
+177
+206
+217
+0
+0
+34.33 [30.67, 38.17]
+Table 1: Strict behavioral outcomes, 600 responses per arm. Cand. and Rec. count incentive
+candidates and recovered proxies, respectively, so they exclude the instructed control. False-rate
+intervals use question bootstrap. The instructed arm has 39 false answers on known questions, 16
+with correct follow-ups; these are separate controls.
+Strict (n = 939)
+Audited (n = 813)
+Category
+Count
+Share (%) [95% CI]
+Count
+Share (%) [95% CI]
+Recovered incentive misreport proxy
+2
+0.21 [0.00, 0.57]
+2
+0.25 [0.00, 0.66]
+Uncertain neutral error proxy
+124
+13.21 [11.55, 14.90]
+109
+13.41 [11.61, 15.24]
+Repeats stable wrong belief
+245
+26.09 [20.76, 31.10]
+195
+23.99 [18.51, 29.17]
+Unresolved false output
+568
+60.49 [56.51, 64.78]
+507
+62.36 [58.12, 67.06]
+Table 2: Operational composition of all false outputs in the equal neutral/sham/reward/reputation
+mixture. The instructed arm is excluded. Intervals are question-bootstrap 95% intervals, conditional
+on observed cases. These labels leave most false outputs unresolved and do not establish latent
+mechanisms.
+response-level threshold is the higher 95th percentile of scores on only 45 validation neutral-correct
+answers; a strict score exceedance triggers a flag. Five percent is a calibration target, not a guaran-
+teed test false-positive rate. This sample cannot resolve a 1% rate.
+We use 2,000 question-cluster bootstrap replicates for shares, risk differences, and AUROC, pre-
+serving dependence among responses to the same question. AUROC uses tie-correct weighted
+Mann–Whitney calculations checked against scikit-learn. Exact paired McNemar/binomial tests
+compare reward and reputation with sham among known questions, with Holm correction across
+these two primary tests. Detector comparisons and external checks are descriptive. Small-cell boot-
+strap intervals condition on observed examples and can substantially understate uncertainty about
+unseen misreport types.
+4
+Results
+4.1
+Behavioral yield and unresolved false outputs
+Table 1 reports all five arms. Strict false rates range from 34.33% to 42.33%, alongside substantial
+abstention. Explicit instruction does not reliably elicit false answers: the instructed arm produces
+177 correct answers and 217 abstentions. Its 39 known-question false outputs include 16 recoveries,
+but these instructed cases are excluded from incentive-misreport counts.
+How many false outputs can we classify? Among 229 strictly known questions, reward produces
+six candidate mismatches and reputation produces 12. Only two candidates recover the reference
+answer in follow-up, both in reward. Across the four non-instructed arms, 939 outputs are false.
+Recovered proxies account for 2/939 (0.21%), uncertain neutral errors for 124/939 (13.21%), and
+stable-wrong repetitions for 245/939 (26.09%). The remaining 568/939 (60.49%) are unresolved
+(table 2). We therefore do not identify the requested two-way mechanism partition.
+Even if the operational labels were correct, assigning none or all of the strict unresolved outputs
+to misreporting allows a share from 0.21% to 60.70%. This is an ambiguity range under those
+assumptions, not a confidence interval or a bound on latent intent. The two recovered events occur
+on two of 600 distinct questions, whose exact binomial 95% interval is 0.04%–1.20%. The near-zero
+5
